@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Алёна Грамович](https://up.htmlacademy.ru/adaptive/23/user/1359579).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
