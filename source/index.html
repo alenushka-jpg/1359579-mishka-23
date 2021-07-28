@@ -11,7 +11,9 @@
           <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина мягких игрушек: Мишка">
         </a>
         <div class="page-header__menu">
-          <button class="page-header__burger page-header__burger--close" type="button" aria-label="Открыть меню"></button>
+          <button class="page-header__burger page-header__burger--close" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <nav class="main-navigation">
             <ul class="main-navigation__list site-list">
               <li class="site-list__item">
@@ -26,13 +28,13 @@
               </li>
             </ul>
             <ul class="main-navigation__list shopping-list">
-              <li class="shopping-navigation__item">
-                <a class="shopping-navigation__link" href="#">
+              <li class="shopping-list__item">
+                <a class="shopping-list__link" href="#">
                   Новые поступления
                 </a>
               </li>
-              <li class="shopping-navigation__item">
-                <a class="shopping-navigation__link" href="#">
+              <li class="shopping-list__item">
+                <a class="shopping-list__link" href="#">
                   Распродажа
                 </a>
               </li>
@@ -76,37 +78,35 @@
       </section>
       <section class="featured">
         <div class="featured__container container">
-          <div class="featured__wrapper">
-            <article class="featured__description">
-              <h2 class="featured__title">Вязаные корзинки</h2>
-              <span class="featured__subtitle">товар недели</span>
-              <p class="featured__text">
-                Экологически чистая пряжа,
-                ручная работа. Доступны в
-                шести расцветках и трёх размерах.
-              </p>
-              <table class="featured__table table-features">
-                <tr class="table-features__row">
-                  <dt class="table-features__cell">Цвет:</dt>
-                  <dt class="table-features__cell">«Тиффани»/серый</dt>
-                </tr>
-                <tr class="table-features__row">
-                  <dt class="table-features__cell">Диаметр:</dt>
-                  <dt class="table-features__cell">25 см</dt>
-                </tr>
-                <tr class="table-features__row">
-                  <dt class="table-features__cell">Высота:</dt>
-                  <dt class="table-features__cell">15 см</dt>
-                </tr>
-              </table>
-            </article>
-            <div class="featured__image-wrapper">
-              <img src="https://via.placeholder.com/569x373" alt="Деревянный домик с мягкими игрушками внутри">
-            </div>
-            <div class="featured__buy">
-              <div class="featured__price">Цена: 990 руб.</div>
-              <a class="featured__button button" href="form.html">Заказать</a>
-            </div>
+          <article class="featured__description">
+            <h2 class="featured__title">Вязаные корзинки</h2>
+            <span class="featured__subtitle">товар недели</span>
+            <p class="featured__text">
+              Экологически чистая пряжа,
+              ручная работа. Доступны в
+              шести расцветках и трёх размерах.
+            </p>
+            <table class="featured__table table-features">
+              <tr class="table-features__row">
+                <dt class="table-features__cell">Цвет:</dt>
+                <dt class="table-features__cell">«Тиффани»/серый</dt>
+              </tr>
+              <tr class="table-features__row">
+                <dt class="table-features__cell">Диаметр:</dt>
+                <dt class="table-features__cell">25 см</dt>
+              </tr>
+              <tr class="table-features__row">
+                <dt class="table-features__cell">Высота:</dt>
+                <dt class="table-features__cell">15 см</dt>
+              </tr>
+            </table>
+          </article>
+          <div class="featured__image-wrapper">
+            <img src="https://via.placeholder.com/569x373" alt="Деревянный домик с мягкими игрушками внутри">
+          </div>
+          <div class="featured__buy">
+            <div class="featured__price">Цена: 990 руб.</div>
+            <a class="featured__button button" href="form.html">Заказать</a>
           </div>
         </div>
       </section>
@@ -161,8 +161,12 @@
               </blockquote>
             </li>
           </ul>
-          <button class="reviews__button reviews__button--prev" type="button" aria-label="Предыдущий слайд"></button>
-          <button class="reviews__button reviews__button--next" type="button" aria-label="Следующий слайд"></button>
+          <button class="reviews__button reviews__button--prev" type="button">
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <button class="reviews__button reviews__button--next" type="button">
+            <span class="visually-hidden">Следующий слайд</span>
+          </button>
           <a class="reviews__button button" type="button">Написать</a>
         </div>
       </section>
@@ -194,13 +198,19 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#" aria-label="Ссылка на инстаграм магазина"></a>
+              <a class="social__link social__link--instagram" href="#">
+                <span class="visually-hidden">Ссылка на инстаграм магазина</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#" aria-label="Ссылка на фейсбук магазина"></a>
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Ссылка на фейсбук магазина</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#" aria-label="Ссылка на твиттер магазина"></a>
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Ссылка на твиттер магазина</span>
+              </a>
             </li>
           </ul>
         </div>
