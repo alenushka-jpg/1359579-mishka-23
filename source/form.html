@@ -11,7 +11,9 @@
           <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина мягких игрушек: Мишка">
         </a>
         <div class="page-header__menu">
-          <button class="page-header__burger page-header__burger--close" type="button" aria-label="Открыть меню"></button>
+          <button class="page-header__burger page-header__burger--close" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <nav class="main-navigation">
             <ul class="main-navigation__list site-list">
               <li class="site-list__item">
@@ -62,119 +64,129 @@
             Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </p>
         </div>
-        <form class="user-data" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="user-data__fieldset user-data__fieldset--type">
-            <legend class="user-data__legend">тип</legend>
-            <ul class="user-data__list">
-              <li class="user-data__item">
-                <label class="radio-button">
-                  <input class="radio-button__input" name="type" type="radio" value="toy">
-                  <span class="radio-button__label">Аксессуар для интерьера</span>
-                </label>
-              </li>
-              <li class="user-data__item">
-                <label class="radio-button">
-                  <input class="radio-button__input" name="type" type="radio" value="accessory">
-                  <span class="radio-button__label">Детская игрушка</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="user-data__fieldset user-data__fieldset--color">
-            <legend class="user-data__legend">цвет</legend>
-            <ul class="user-data__list">
-              <li class="user-data__item">
-                <label class="checkbox">
-                  <input class="checkbox__input" name="color" type="checkbox" value="white">
+      </section>
+      <form class="user-data" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="user-data__fieldset user-data__fieldset--type">
+          <legend class="user-data__legend">тип</legend>
+          <ul class="user-data__list">
+            <li class="user-data__item">
+              <label class="radio-button">
+                <input class="radio-button__input" name="type" type="radio" value="toy">
+                <span class="radio-button__label">Аксессуар для интерьера</span>
+              </label>
+            </li>
+            <li class="user-data__item">
+              <label class="radio-button">
+                <input class="radio-button__input" name="type" type="radio" value="accessory">
+                <span class="radio-button__label">Детская игрушка</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="user-data__fieldset user-data__fieldset--color">
+          <legend class="user-data__legend">цвет</legend>
+          <ul class="user-data__list">
+            <li class="user-data__item">
+              <label class="checkbox">
+                <input class="checkbox__input" name="color" type="checkbox" value="white">
                   <span class="checkbox__label">Белый</span>
                 </input>
-                </label>
-              </li>
-              <li class="user-data__item">
-                <label class="checkbox">
-                  <input class="checkbox__input" name="color" type="checkbox" value="grey">
+              </label>
+            </li>
+            <li class="user-data__item">
+              <label class="checkbox">
+                <input class="checkbox__input" name="color" type="checkbox" value="grey">
                   <span class="checkbox__label">Серый</span>
                 </input>
-                </label>
-              </li>
-              <li class="user-data__item">
-                <label class="checkbox">
-                  <input class="checkbox__input" name="color" type="checkbox" value="tiffany">
+              </label>
+            </li>
+            <li class="user-data__item">
+              <label class="checkbox">
+                <input class="checkbox__input" name="color" type="checkbox" value="tiffany">
                   <span class="checkbox__label">«Тиффани»</span>
                 </input>
-                </label>
-              </li>
-              <li class="user-data__item">
-                <label class="checkbox">
-                  <input class="checkbox__input" name="color" type="checkbox" value="black">
+              </label>
+            </li>
+            <li class="user-data__item">
+              <label class="checkbox">
+                <input class="checkbox__input" name="color" type="checkbox" value="black">
                   <span class="checkbox__label">Черный</span>
                 </input>
-                </label>
-              </li>
-              <li class="user-data__item">
-                <label class="checkbox">
-                  <input class="checkbox__input" name="color" type="checkbox" value="pink">
+              </label>
+            </li>
+            <li class="user-data__item">
+              <label class="checkbox">
+                <input class="checkbox__input" name="color" type="checkbox" value="pink">
                   <span class="checkbox__label">Розовый</span>
                 </input>
-                </label>
-              </li>
-              <li class="user-data__item">
-                <label class="checkbox">
-                  <input class="checkbox__input" name="color" type="checkbox" value="orange">
+              </label>
+            </li>
+            <li class="user-data__item">
+              <label class="checkbox">
+                <input class="checkbox__input" name="color" type="checkbox" value="orange">
                   <span class="checkbox__label">Оранжевый</span>
                 </input>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="user-data__fieldset user-data__fieldset--user">
-            <legend class="user-data__legend">фио</legend>
-            <ul class="user-data__list">
-              <li class="user-data__item">
-                <label class="field">
-                  <span class="field__label">Имя:</span>
-                  <input class="field__input" type="text" name="last-name" placeholder="Введите ваше имя*">
-                </label>
-              </li>
-              <li class="user-data__item">
-                <label class="field">
-                  <span class="field__label">Фамилия:</span>
-                  <input class="field__input" type="text" name="second-name" placeholder="Укажите фамилию*">
-                </label>
-              </li>
-              <li class="user-data__item">
-                <label class="field">
-                  <span class="field__label">Отчество:</span>
-                  <input class="field__input" type="text" name="first-name" placeholder="Отчество, если желаете">
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="user-data__fieldset user-data__fieldset--contacts">
-            <legend class="user-data__legend">тел</legend>
-            <label class="contacts contacts--phone">
-              <input class="contacts__input" type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-            </label>
-            <legend class="user-data__legend">e-mail</legend>
-            <label class="contacts contacts--email">
-              <input class="contacts__input" type="text" name="email" placeholder="Ваш Email*">
-            </label>
-          </fieldset>
-          <fieldset class="user-data__fieldset user-data__fieldset--message">
-            <legend class="user-data__legend">доп</legend>
-            <label class="field field--textarea">
-              <span class="visually-hidden">Ваши пожелания</span>
-              <textarea class="field__input" name="message">
-                Опишите все ваши пожелания к заказу
-              </textarea>
-            </label>
-          </fieldset>
-          <div class="user-data__footer">
-            <p class="user-data__footnote">*Поля обязательны для заполнения</p>
-            <button class="user-data__button button" type="submit">отправить заказ</button>
-          </div>
-        </form>
-      </section>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="user-data__fieldset user-data__fieldset--user">
+          <legend class="user-data__legend">фио</legend>
+          <ul class="user-data__list">
+            <li class="user-data__item">
+              <label class="field">
+                <span class="field__label">Имя:</span>
+                <input class="field__input" type="text" name="last-name" placeholder="Введите ваше имя*">
+                  <span class="visually-hidden">Введите ваше имя*</span>
+                </input>
+              </label>
+            </li>
+            <li class="user-data__item">
+              <label class="field">
+                <span class="field__label">Фамилия:</span>
+                <input class="field__input" type="text" name="second-name" placeholder="Укажите фамилию*">
+                  <span class="visually-hidden">Укажите фамилию*</span>
+                </input>
+              </label>
+            </li>
+            <li class="user-data__item">
+              <label class="field">
+                <span class="field__label">Отчество:</span>
+                <input class="field__input" type="text" name="first-name" placeholder="Отчество, если желаете">
+                  <span class="visually-hidden">Отчество, если желаете</span>
+                </input>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="user-data__fieldset user-data__fieldset--contacts">
+          <legend class="user-data__legend">тел</legend>
+          <label class="contacts contacts--phone">
+            <input class="contacts__input" type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              <span class="visually-hidden">Введите ваш номер телефона</span>
+            </input>
+          </label>
+          <legend class="user-data__legend">e-mail</legend>
+          <label class="contacts contacts--email">
+            <input class="contacts__input" type="text" name="email" placeholder="Ваш Email*">
+              <span class="visually-hidden">Введите ваш емайл</span>
+            </input>
+          </label>
+        </fieldset>
+        <fieldset class="user-data__fieldset user-data__fieldset--message">
+          <legend class="user-data__legend">доп</legend>
+          <label class="field field--textarea">
+            <span class="visually-hidden">Ваши пожелания</span>
+            <textarea class="field__input" name="message">
+              Опишите все ваши пожелания к заказу
+            </textarea>
+          </label>
+        </fieldset>
+        <div class="user-data__footer">
+          <p class="user-data__footnote">*Поля обязательны для заполнения</p>
+          <button class="user-data__button button" type="submit">отправить заказ</button>
+        </div>
+      </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__container container">
@@ -184,13 +196,19 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://instagram.com/htmlacademy" aria-label="Ссылка на инстаграм магазина"></a>
+              <a class="social__link social__link--instagram" href="https://instagram.com/htmlacademy">
+                <span class="visually-hidden">Ссылка на инстаграм магазина</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy" aria-label="Ссылка на фейсбук магазина"></a>
+              <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">
+                <span class="visually-hidden">Ссылка на фейсбук магазина</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy" aria-label="Ссылка на твиттер магазина"></a>
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
+                <span class="visually-hidden">Ссылка на твиттер магазина</span>
+              </a>
             </li>
           </ul>
         </div>
