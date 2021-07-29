@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header container">
+      <a class="page-header__logo logo" href="index.html">
+        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина мягких игрушек: Мишка">
+      </a>
+      <div class="page-header__menu">
+        <button class="page-header__burger page-header__burger--closed" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <nav class="main-navigation">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                Вязание на заказ
+              </a>
+            </li>
+          </ul>
+          <ul class="main-navigation__list shopping-list">
+            <li class="shopping-list__item">
+              <a class="shopping-list__link" href="#">
+                Новые поступления
+              </a>
+            </li>
+            <li class="shopping-list__item">
+              <a class="shopping-list__link" href="#">
+                Распродажа
+              </a>
+            </li>
+          </ul>
+          <ul class="main-navigation__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="intro">
+        <h1 class="intro__title container">Каталог товаров</h1>
+      </section>
+      <section class="product-list container">
+        <h2 class="visually-hidden">Карточки товаров</h2>
+        <ul class="product-list__list">
+          <li class="product-list__item">
+            <article class="product-card">
+              <a class="product-card__img-link" href="#">
+                <img class="product-card__img" src="https://via.placeholder.com/260x195" alt="Вязаная игрушка Зайчик-попрыгайчик">
+              </a>
+              <a class="product-card__title-link" href="#">
+                <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
+              </a>
+              <span class="product-card__description">Рост 30 см, вес 200 г</span>
+              <span class="product-card__price">1 200 руб.</span>
+              <a class="product-card__basket" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+            </article>
+          </li>
+          <li class="product-list__item">
+            <article class="product-card">
+              <a class="product-card__img-link" href="#">
+                <img class="product-card__img" src="https://via.placeholder.com/260x195" alt="Вязаная корзинка для белья">
+              </a>
+              <a class="product-card__title-link" href="#">
+                <h2 class="product-card__title">Корзинка для белья</h2>
+              </a>
+              <span class="product-card__description">Диаметр 15 см, высота 10 см</span>
+              <span class="product-card__price">690 руб.</span>
+              <a class="product-card__basket" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+            </article>
+          </li>
+          <li class="product-list__item">
+            <article class="product-card">
+              <a class="product-card__img-link" href="#">
+                <img class="product-card__img" src="https://via.placeholder.com/260x195" alt="Вязаная большая корзинка для белья">
+              </a>
+              <a class="product-card__title-link" href="#">
+                <h2 class="product-card__title">Большая корзинка для игрушек</h2>
+              </a>
+              <span class="product-card__description">Диаметр 30 см, высота 30 см</span>
+              <span class="product-card__price">1 500 руб.</span>
+              <a class="product-card__basket" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="video-product container">
+        <h2 class="video-product__title">Процесс производства</h2>
+        <img class="video-product__img" src="https://via.placeholder.com/260x150" alt="">
+        <p class="video-product__description">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a class="video-product__button button" type="button">Сделать заказ</a>
+      </section>
+    </main>
+    <footer class="page-footer container">
+      <a class="page-footer__logo logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина мягких игрушек: Мишка">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
+              <span class="visually-hidden">Ссылка на инстаграм магазина</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Ссылка на фейсбук магазина</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">Ссылка на твиттер магазина</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="copyright__text">Разработано</p>
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
