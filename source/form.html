@@ -11,7 +11,7 @@
           <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина мягких игрушек: Мишка">
         </a>
         <div class="page-header__menu">
-          <button class="page-header__burger page-header__burger--close" type="button">
+          <button class="page-header__burger page-header__burger--closed" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <nav class="main-navigation">
@@ -22,7 +22,7 @@
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="form.html">
+                <a class="site-list__link" href="#">
                   Вязание на заказ
                 </a>
               </li>
@@ -59,27 +59,29 @@
       <section class="intro">
         <div class="intro__container container">
           <h1 class="intro__title">Вязание на заказ</h1>
-          <p class="intro__text">
-            Мы будем рады воплотить в жизнь ваши пожелания!
-            Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-          </p>
         </div>
       </section>
       <form class="user-data" method="post" action="https://echo.htmlacademy.ru">
         <div class="user-data__container container">
+          <p class="user-data__intro">
+            Мы будем рады воплотить в жизнь ваши пожелания!
+            Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+          </p>
           <fieldset class="user-data__fieldset user-data__fieldset--type">
             <legend class="user-data__legend">тип</legend>
             <ul class="user-data__list">
               <li class="user-data__item">
                 <label class="radio-button">
                   <input class="radio-button__input" name="type" type="radio" value="toy">
-                  <span class="radio-button__label">Аксессуар для интерьера</span>
+                    <span class="radio-button__label">Аксессуар для интерьера</span>
+                  </input>
                 </label>
               </li>
               <li class="user-data__item">
                 <label class="radio-button">
                   <input class="radio-button__input" name="type" type="radio" value="accessory">
-                  <span class="radio-button__label">Детская игрушка</span>
+                    <span class="radio-button__label">Детская игрушка</span>
+                  </input>
                 </label>
               </li>
             </ul>
@@ -132,30 +134,25 @@
             </ul>
           </fieldset>
           <fieldset class="user-data__fieldset user-data__fieldset--user">
+            <h2 class="visually-hidden">Введите ваше фио</h2>
             <legend class="user-data__legend">фио</legend>
             <ul class="user-data__list">
               <li class="user-data__item">
                 <label class="field">
                   <span class="field__label">Имя:</span>
-                  <input class="field__input" type="text" name="last-name" placeholder="Введите ваше имя*">
-                    <span class="visually-hidden">Введите ваше имя*</span>
-                  </input>
+                  <input class="field__input" type="text" name="last-name" placeholder="Введите ваше имя*"></input>
                 </label>
               </li>
               <li class="user-data__item">
                 <label class="field">
                   <span class="field__label">Фамилия:</span>
-                  <input class="field__input" type="text" name="second-name" placeholder="Укажите фамилию*">
-                    <span class="visually-hidden">Укажите фамилию*</span>
-                  </input>
+                  <input class="field__input" type="text" name="second-name" placeholder="Укажите фамилию*"></input>
                 </label>
               </li>
               <li class="user-data__item">
                 <label class="field">
                   <span class="field__label">Отчество:</span>
-                  <input class="field__input" type="text" name="first-name" placeholder="Отчество, если желаете">
-                    <span class="visually-hidden">Отчество, если желаете</span>
-                  </input>
+                  <input class="field__input" type="text" name="first-name" placeholder="Отчество, если желаете"></input>
                 </label>
               </li>
             </ul>
@@ -163,13 +160,13 @@
           <fieldset class="user-data__fieldset user-data__fieldset--contacts">
             <legend class="user-data__legend">тел</legend>
             <label class="contacts contacts--phone">
-              <input class="contacts__input" type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              <input class="contacts__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
                 <span class="visually-hidden">Введите ваш номер телефона</span>
               </input>
             </label>
             <legend class="user-data__legend">e-mail</legend>
             <label class="contacts contacts--email">
-              <input class="contacts__input" type="text" name="email" placeholder="Ваш Email*">
+              <input class="contacts__input" type="email" name="email" placeholder="Ваш Email*">
                 <span class="visually-hidden">Введите ваш емайл</span>
               </input>
             </label>
@@ -178,14 +175,12 @@
             <legend class="user-data__legend">доп</legend>
             <label class="field field--textarea">
               <span class="visually-hidden">Ваши пожелания</span>
-              <textarea class="field__input" name="message">
-                Опишите все ваши пожелания к заказу
-              </textarea>
+              <textarea class="field__input" name="message">Опишите все ваши пожелания к заказу</textarea>
             </label>
           </fieldset>
           <div class="user-data__footer">
             <p class="user-data__footnote">*Поля обязательны для заполнения</p>
-            <button class="user-data__button button" type="submit">отправить заказ</button>
+            <button class="user-data__button button" type="submit">Отправить заказ</button>
           </div>
         </div>
       </form>
