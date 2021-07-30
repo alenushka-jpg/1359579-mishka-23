@@ -1,0 +1,19 @@
+.promo {
+  width: 569px;
+  height: 506px;
+  background-image: url("../img/hero-mobile.png");
+  background-color: $basic-color-800;
+  background-repeat: no-repeat;
+}
+
+.promo__link {
+  display: block;
+
+  &--accesories {
+    background-color: $additional-color-200;
+  }
+
+  &--toys {
+    background-color: $additional-color-300;
+  }
+}

@@ -28,8 +28,4 @@ img {
 
 button {
   font: inherit;
-
-  &:focus:not(:focus-visible) {
-    outline: none;
-  }
 }
