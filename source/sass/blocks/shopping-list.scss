@@ -1,3 +1,12 @@
+.shopping-list {
+  display: none;
+}
+
+.shopping-list__item {
+  padding-top: 26px;
+  padding-bottom: 24px;
+}
+
 .shopping-list__link {
   text-decoration: none;
   font-weight: bold;

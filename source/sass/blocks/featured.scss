@@ -1,5 +1,6 @@
 .featured__title {
   margin: 0;
+  margin-top: 31px;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
@@ -7,18 +8,26 @@
 }
 
 .featured__subtitle {
+  display: block;
   margin: 0;
+  margin-bottom: 17px;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   color: $additional-color-200;
+  text-transform: uppercase;
 }
 
 .featured__text {
   margin: 0;
+  margin-bottom: 28px;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
+}
+
+.featured__image-wrapper {
+  margin-bottom: 25px;
 }
 
 .featured__price {

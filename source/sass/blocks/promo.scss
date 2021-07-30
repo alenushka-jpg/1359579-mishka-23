@@ -1,5 +1,5 @@
 .promo {
-  height: 506px;
+  min-height: 486px;
   background-image: url("../img/hero-mobile.png");
   background-color: $basic-color-800;
   background-repeat: no-repeat;
@@ -7,6 +7,7 @@
 
 .promo__title {
   margin: 0;
+  padding-top: 73px;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
@@ -15,6 +16,9 @@
 
 .promo__link {
   display: block;
+  padding-top: 24px;
+  padding-bottom: 31px;
+  padding-right: 150px;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
