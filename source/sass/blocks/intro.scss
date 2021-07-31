@@ -1,8 +1,15 @@
 .intro {
-  margin-bottom: 30px;
   padding-top: 81px;
   padding-bottom: 67px;
   background-color: $primary-color-200;
+
+  &--catalog {
+    margin-bottom: 30px;
+  }
+
+  &--form {
+    margin-bottom: 17px;
+  }
 }
 
 .intro__title {
