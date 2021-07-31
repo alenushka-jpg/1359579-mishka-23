@@ -10,7 +10,9 @@
   }
 
   &--textarea {
-    resize: none;
+    .field__input {
+      resize: none;
+    }
   }
 }
 
