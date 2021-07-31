@@ -1,8 +1,19 @@
+.contacts {
+  padding-top: 38px;
+}
+
 .contacts__title {
+  margin: 0;
+  margin-bottom: 28px;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
   color: $basic-color-900;
+}
+
+.contacts__list {
+  margin: 0;
+  margin-bottom: 62px;
 }
 
 .contacts__subtitle {
@@ -13,3 +24,12 @@
 .contacts__description {
   margin: 0;
 }
+
+.contacts__map {
+  margin-bottom: 41px;
+}
+
+.contacts__button {
+  margin-bottom: 39px;
+}
+

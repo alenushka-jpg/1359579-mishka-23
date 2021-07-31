@@ -1,9 +1,13 @@
 .button {
   display: block;
   text-decoration: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   color: $basic-color-800;
+  text-align: center;
+  border: 2px solid $basic-color-800;
   text-transform: uppercase;
 }

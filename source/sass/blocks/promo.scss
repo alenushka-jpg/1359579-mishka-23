@@ -11,14 +11,17 @@
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
+  text-align: center;
   color: $basic-color-900;
 }
 
 .promo__link {
   display: block;
+  margin: 0 -30px;
   padding-top: 24px;
-  padding-bottom: 31px;
   padding-right: 150px;
+  padding-bottom: 31px;
+  padding-left: 30px;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;

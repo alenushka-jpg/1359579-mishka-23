@@ -1,5 +1,17 @@
+.about-us {
+  margin-bottom: 58px;
+}
+
+.about-us__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 31px;
+}
+
 .about-us__title {
   margin: 0;
+  margin-bottom: 80px;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
@@ -7,9 +19,12 @@
 }
 
 .about-us__item {
-  list-style: none;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   color: $basic-color-900;
+
+  &:not(:last-child) {
+    margin-bottom: 83px;
+  }
 }

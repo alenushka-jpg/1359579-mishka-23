@@ -1,3 +1,7 @@
+.featured {
+  margin-bottom: 36px;
+}
+
 .featured__title {
   margin: 0;
   margin-top: 31px;
@@ -31,7 +35,10 @@
 }
 
 .featured__price {
+  display: block;
+  margin-bottom: 24px;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  text-align: center;
 }
