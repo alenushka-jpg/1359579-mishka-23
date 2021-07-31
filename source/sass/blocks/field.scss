@@ -1,0 +1,12 @@
+.field__label {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: $basic-color-900;
+}
+
+.field__input {
+  &--data {
+    border: none;
+  }
+}

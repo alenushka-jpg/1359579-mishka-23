@@ -10,6 +10,14 @@
   padding: 0;
 }
 
+.user-data__legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $additional-color-200;
+  text-transform: uppercase;
+}
+
 .user-data__list {
   margin: 0;
   padding: 0;
