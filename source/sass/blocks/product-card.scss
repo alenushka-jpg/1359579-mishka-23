@@ -1,10 +1,12 @@
 .product-card__img-link {
   display: block;
+  margin-bottom: 27px;
 }
 
 .product-card__title-link {
   text-decoration: none;
   display: block;
+  margin-bottom: 6px;
 }
 
 .product-card__title {
@@ -15,11 +17,15 @@
 }
 
 .product-card__description {
+  display: block;
+  margin-bottom: 41px;
   font-size: 13px;
   color: $basic-color-800;
 }
 
 .product-card__price {
+  display: block;
+  padding-bottom: 26px;
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
