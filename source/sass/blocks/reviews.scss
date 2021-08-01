@@ -27,6 +27,10 @@
   margin: 0;
 }
 
+.reviews__text {
+  margin: 0;
+}
+
 .reviews__author-name {
   font-style: normal;
   font-weight: 700;
@@ -39,4 +43,10 @@
   font-weight: normal;
   font-size: 17px;
   line-height: 30px;
+}
+
+.reviews__button {
+  margin-bottom: 89px;
+  padding-right: 78px;
+  padding-left: 78px;
 }
