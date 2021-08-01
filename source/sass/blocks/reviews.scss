@@ -1,7 +1,3 @@
-.reviews {
-  margin-bottom: 45px;
-}
-
 .reviews__list {
   list-style: none;
   margin: 0;
@@ -10,19 +6,20 @@
 
 .reviews__title {
   margin: 0;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  color: $basic-color-900;
+  color: $color-black;
 }
 
 .reviews__item {
+  display: none;
   font-weight: normal;
   font-size: 15px;
   line-height: 30px;
 
-  &--hidden {
-    display: none;
+  &--active {
+    display: block;
   }
 }
 
@@ -32,10 +29,10 @@
 
 .reviews__author-name {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: $basic-color-900;
+  color: $color-black;
 }
 
 .reviews__auhor-instagram {

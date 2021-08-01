@@ -9,34 +9,14 @@
   border: none;
   margin: 0;
   padding: 0;
-
-  &--type,
-  &--color {
-    margin-bottom: 43px;
-    padding-top: 35px;
-  }
-
-  &--user {
-    margin-bottom: 34px;
-    padding-top: 28px;
-  }
-
-  &--contacts {
-    margin-bottom: 34px;
-    padding-top: 18px;
-  }
-
-  &--message {
-    padding-top: 22px;
-  }
 }
 
 .user-data__legend {
   padding: 0;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 16px;
-  color: $additional-color-200;
+  color: $color-green-200;
   text-transform: uppercase;
 }
 
@@ -44,24 +24,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-
-  &--type {
-    .user-data__item:not(:last-child) {
-      margin-bottom: 24px;
-    }
-  }
-
-  &--color {
-    .user-data__item:not(:last-child) {
-      margin-bottom: 43px;
-    }
-  }
-
-  &--user {
-    .user-data__item:not(:last-child) {
-      margin-bottom: 39px;
-    }
-  }
 }
 
 .user-data__footer {

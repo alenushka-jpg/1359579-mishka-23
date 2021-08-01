@@ -1,24 +1,20 @@
-.featured {
-  margin-bottom: 36px;
-}
-
 .featured__title {
   margin: 0;
   margin-top: 31px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  color: $basic-color-900;
+  color: $color-black;
 }
 
 .featured__subtitle {
   display: block;
   margin: 0;
   margin-bottom: 17px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  color: $additional-color-200;
+  color: $color-green-200;
   text-transform: uppercase;
 }
 
@@ -37,8 +33,12 @@
 .featured__price {
   display: block;
   margin-bottom: 24px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
+}
+
+.featured__button {
+  margin-bottom: 73px;
 }

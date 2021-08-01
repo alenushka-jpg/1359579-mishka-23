@@ -1,15 +1,18 @@
 .button {
-  display: block;
+  display: inline-block;
   text-decoration: none;
+  margin-bottom: 89px;
   padding: 0;
   padding-top: 14px;
+  padding-right: 78px;
+  padding-left: 78px;
   padding-bottom: 14px;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: $basic-color-800;
+  color: $color-gray-500;
   text-align: center;
-  border: 2px solid $basic-color-800;
+  border: 2px solid $color-gray-500;
   text-transform: uppercase;
 }

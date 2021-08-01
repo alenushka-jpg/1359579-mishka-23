@@ -1,14 +1,6 @@
 .field {
   display: block;
 
-  &--phone {
-    margin-bottom: 50px;
-  }
-
-  &--email {
-    padding-top: 20px;
-  }
-
   &--textarea {
     .field__input {
       resize: none;
@@ -19,10 +11,10 @@
 .field__label {
   display: block;
   margin-bottom: 17px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  color: $basic-color-900;
+  color: $color-black;
 }
 
 .field__input {
