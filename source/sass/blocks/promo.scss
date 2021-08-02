@@ -1,6 +1,10 @@
 .promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 486px;
   background-image: url("../img/hero-mobile.png");
+  background-position: center 0;
   background-color: $color-gray-300;
   background-repeat: no-repeat;
 }
@@ -18,6 +22,11 @@
 .promo__link {
   text-decoration: none;
   display: block;
+  margin: 0 -30px;
+  padding-top: 24px;
+  padding-left: 30px;
+  padding-right: 160px;
+  padding-bottom: 31px;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
