@@ -1,0 +1,50 @@
+.reviews__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-black;
+}
+
+.reviews__item {
+  display: none;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+
+  &--active {
+    display: block;
+  }
+}
+
+.reviews__quote {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+}
+
+.reviews__author-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-black;
+}
+
+.reviews__auhor-instagram {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.reviews__button {
+  margin-bottom: 89px;
+}

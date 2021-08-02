@@ -1,0 +1,34 @@
+.product-card__img-link {
+  display: block;
+}
+
+.product-card__title-link {
+  text-decoration: none;
+  display: block;
+}
+
+.product-card__title {
+  margin: 0;
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-black;
+}
+
+.product-card__description {
+  display: block;
+  font-size: 13px;
+  color: $color-black;
+}
+
+.product-card__price {
+  display: block;
+  padding-bottom: 26px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: $color-black;
+}
+
+.product-card__basket {
+  display: block;
+}

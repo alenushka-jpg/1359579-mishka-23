@@ -1,0 +1,33 @@
+.promo {
+  min-height: 486px;
+  background-image: url("../img/hero-mobile.png");
+  background-color: $color-gray-300;
+  background-repeat: no-repeat;
+}
+
+.promo__title {
+  margin: 0;
+  padding-top: 73px;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  color: $color-black;
+}
+
+.promo__link {
+  text-decoration: none;
+  display: block;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: $color-white;
+
+  &--accesories {
+    background-color: $color-green-200;
+  }
+
+  &--toys {
+    background-color: $color-green-300;
+  }
+}

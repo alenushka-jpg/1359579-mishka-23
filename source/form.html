@@ -2,7 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header container">
@@ -53,9 +55,9 @@
         </nav>
       </div>
     </header>
-    <main class="page-main">
-      <section class="intro container">
-        <h1 class="intro__title">Вязание на заказ</h1>
+    <main class="page__main">
+      <section class="intro intro--form">
+        <h1 class="intro__title container">Вязание на заказ</h1>
       </section>
       <form class="user-data container" method="post" action="https://echo.htmlacademy.ru">
         <p class="user-data__intro">
@@ -64,7 +66,7 @@
         </p>
         <fieldset class="user-data__fieldset user-data__fieldset--type">
           <legend class="user-data__legend">тип</legend>
-          <ul class="user-data__list">
+          <ul class="user-data__list user-data__list--type">
             <li class="user-data__item">
               <label class="radio-button">
                 <input class="radio-button__input" name="type" type="radio" value="toy">
@@ -81,7 +83,7 @@
         </fieldset>
         <fieldset class="user-data__fieldset user-data__fieldset--color">
           <legend class="user-data__legend">цвет</legend>
-          <ul class="user-data__list">
+          <ul class="user-data__list user-data__list--color">
             <li class="user-data__item">
               <label class="checkbox">
                 <input class="checkbox__input" name="color" type="checkbox" value="white">
@@ -123,25 +125,25 @@
         <fieldset class="user-data__fieldset user-data__fieldset--user">
           <h2 class="visually-hidden">Введите ваше фио</h2>
           <legend class="user-data__legend">фио</legend>
-          <ul class="user-data__list">
+          <ul class="user-data__list user-data__list--user">
             <li class="user-data__item">
               <label class="field">
                 <span class="field__label">Имя:</span>
-                <input class="field__input" type="text" name="last-name" placeholder="Введите ваше имя*">
+                <input class="field__input field__input--data" type="text" name="last-name" placeholder="Введите ваше имя*">
                 <span class="visually-hidden">Введите ваше имя*</span>
               </label>
             </li>
             <li class="user-data__item">
               <label class="field">
                 <span class="field__label">Фамилия:</span>
-                <input class="field__input" type="text" name="second-name" placeholder="Укажите фамилию*">
+                <input class="field__input field__input--data" type="text" name="second-name" placeholder="Укажите фамилию*">
                 <span class="visually-hidden">Укажите фамилию*</span>
               </label>
             </li>
             <li class="user-data__item">
               <label class="field">
                 <span class="field__label">Отчество:</span>
-                <input class="field__input" type="text" name="first-name" placeholder="Отчество, если желаете">
+                <input class="field__input field__input--data" type="text" name="first-name" placeholder="Отчество, если желаете">
                 <span class="visually-hidden">Отчество, если желаете</span>
               </label>
             </li>
@@ -149,13 +151,13 @@
         </fieldset>
         <fieldset class="user-data__fieldset user-data__fieldset--contacts">
           <legend class="user-data__legend">тел</legend>
-          <label class="contacts contacts--phone">
-            <input class="contacts__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <label class="field field--phone">
+            <input class="field__input field__input--data" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
             <span class="visually-hidden">Введите ваш номер телефона</span>
           </label>
           <legend class="user-data__legend">e-mail</legend>
-          <label class="contacts contacts--email">
-            <input class="contacts__input" type="email" name="email" placeholder="Ваш Email*">
+          <label class="field field--email">
+            <input class="field__input field__input--data" type="email" name="email" placeholder="Ваш Email*">
             <span class="visually-hidden">Введите ваш емайл</span>
           </label>
         </fieldset>

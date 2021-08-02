@@ -1,0 +1,41 @@
+.user-data__intro {
+  margin: 0;
+  margin-bottom: 37px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.user-data__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-data__legend {
+  padding: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $color-green-200;
+  text-transform: uppercase;
+}
+
+.user-data__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-data__footer {
+  margin-bottom: 55px;
+}
+
+.user-data__footnote {
+  margin: 0;
+  margin-bottom: 30px;
+  line-height: 16px;
+}
+
+.user-data__button {
+  background-color: inherit;
+}
