@@ -27,10 +27,6 @@
   padding-left: 30px;
   padding-right: 160px;
   padding-bottom: 31px;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 24px;
-  color: $color-white;
 
   &--accesories {
     background-color: $color-green-200;
@@ -38,5 +34,34 @@
 
   &--toys {
     background-color: $color-green-300;
+  }
+}
+
+.promo__text {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: $color-white;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    min-height: 746px;
+    background-image: url("../img/hero-tablet.png");
+  }
+
+  .promo__title {
+    padding-top: 154px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .promo__type {
+    display: flex;
+  }
+
+  .promo__link {
+    min-width: 334px;
+    margin: 0;
   }
 }
