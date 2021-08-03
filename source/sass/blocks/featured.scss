@@ -69,6 +69,7 @@
       "paragraph image"
       "table image"
       "button image";
+    margin-bottom: 100px;
   }
 
   .featured__text {
@@ -80,6 +81,10 @@
 
   .featured__table {
     grid-area: table;
+  }
+
+  .featured__buy {
+    grid-area: button;
   }
 
   .featured__image-wrapper {

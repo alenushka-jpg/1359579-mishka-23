@@ -6,7 +6,7 @@
 
 .about-us__title {
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 82px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -19,4 +19,23 @@
   font-size: 17px;
   line-height: 20px;
   color: $color-black;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__title {
+    margin-bottom: 71px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+  }
+
+  .about-us__item {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
