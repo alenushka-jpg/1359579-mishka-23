@@ -35,7 +35,12 @@
   }
 
   .about-us__item {
+    margin-bottom: 100px;
     font-size: 20px;
     line-height: 22px;
+
+    &:last-child {
+      margin-bottom: 83px;
+    }
   }
 }

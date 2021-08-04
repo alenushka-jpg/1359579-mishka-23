@@ -1,5 +1,5 @@
-.featured__wrapper {
-  margin-top: 31px;
+.featured {
+  padding-top: 31px;
 }
 
 .featured__title {
@@ -50,13 +50,17 @@
   .featured__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 37px;
+    align-items: center;
+    margin-bottom: 40px;
   }
 
   .featured__title {
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .featured__subtitle {
+    margin: 0;
   }
 
   .featured__description {

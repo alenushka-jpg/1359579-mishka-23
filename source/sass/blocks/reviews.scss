@@ -51,3 +51,26 @@
 .reviews__button {
   margin-bottom: 89px;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding-top: 82px;
+  }
+
+  .reviews__title {
+    margin-bottom: 35px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .reviews__author-name,
+  .reviews__auhor-instagram {
+    display: block;
+    font-size: 18px;
+  }
+}
