@@ -89,6 +89,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 131px;
   }
 
   .reviews__title {
@@ -96,6 +97,11 @@
     margin-bottom: 35px;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .reviews__list,
+  .reviews__toggle-buttons {
+    margin-bottom: 47px;
   }
 
   .reviews__quote {
