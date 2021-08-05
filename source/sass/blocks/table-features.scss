@@ -1,10 +1,15 @@
+.table-features {
+  width: 100%;
+  border-collapse: collapse;
+}
+
 .table-features__row {
-  display: inline-block;
-  padding-bottom: 25px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $color-gray-100;
 }
 
 .table-features__cell {
-  padding: 0;
+  padding: 10px 0;
   font-size: 15px;
   line-height: 20px;
 
