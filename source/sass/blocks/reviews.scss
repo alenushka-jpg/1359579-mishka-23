@@ -27,25 +27,50 @@
 
 .reviews__quote {
   margin: 0;
-}
-
-.reviews__text {
-  margin: 0;
   margin-bottom: 33px;
 }
 
-.reviews__author-name {
+.reviews__author {
   font-style: normal;
-  font-weight: 700;
   font-size: 17px;
-  line-height: 24px;
-  color: $color-black;
+
+  &--name {
+    font-weight: 700;
+    line-height: 24px;
+    color: $color-black;
+  }
+
+  &--instagram {
+    line-height: 30px;
+  }
 }
 
-.reviews__auhor-instagram {
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 30px;
+.reviews__toggle-buttons {
+  display: flex;
+  border: solid 1px $color-gray-100;
+  margin-bottom: 38px;
+}
+
+.reviews__toggle {
+  width: 50%;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  background-color: inherit;
+
+  &--prev,
+  &--next {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--prev {
+    background-image: url("../../img/huge-arrow-left.svg.svg");
+  }
+
+  &--next {
+    background-image: url("../../img/huge-arrow-right.svg.svg");
+  }
 }
 
 .reviews__button {
@@ -55,22 +80,45 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding-top: 82px;
+    background-image: url("../../img/carpet.png");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .reviews__title {
+    order: -2;
     margin-bottom: 35px;
     font-size: 43px;
     line-height: 50px;
   }
 
-  .reviews__text {
+  .reviews__quote {
     font-size: 17px;
     line-height: 30px;
   }
 
-  .reviews__author-name,
-  .reviews__auhor-instagram {
+  .reviews__author {
     display: block;
     font-size: 18px;
+  }
+
+  .reviews__toggle-buttons {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    width: 175px;
+  }
+
+  .reviews__button {
+    order: -1;
+    align-self: flex-start;
+    width: 175px;
+    margin: 0;
   }
 }
