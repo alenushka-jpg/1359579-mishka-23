@@ -1,5 +1,18 @@
-.table-features__cell {
-  font-size: 15px;
-  line-height: 20px;
+.table-features__row {
+  display: inline-block;
+  padding-bottom: 25px;
 }
 
+.table-features__cell {
+  padding: 0;
+  font-size: 15px;
+  line-height: 20px;
+
+  &--name {
+    padding-right: 25px;
+  }
+
+  &--value {
+    padding-right: 20px;
+  }
+}
