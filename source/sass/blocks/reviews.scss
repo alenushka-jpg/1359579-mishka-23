@@ -84,7 +84,7 @@
     background-repeat: no-repeat;
   }
 
-  .reviews__container {
+  .reviews__quote-author {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -126,5 +126,20 @@
     align-self: flex-start;
     width: 175px;
     margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    margin-left: 50px;
+  }
+
+  .reviews__container {
+    padding-left: 180px;
+    padding-right: 50px;
+  }
+
+  .reviews__toggle-buttons {
+    right: 0;
   }
 }

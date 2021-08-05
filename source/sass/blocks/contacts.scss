@@ -12,9 +12,18 @@
   margin-bottom: 62px;
 }
 
-.contacts__subtitle {
+.contacts__item {
+  display: flex;
+}
+
+.contacts__subtitle,
+.contacts__description {
   font-size: 14px;
   line-height: 30px;
+}
+
+.contacts__subtitle {
+  padding-right: 25px;
 }
 
 .contacts__description {
@@ -27,4 +36,34 @@
 
 .contacts__button {
   margin-bottom: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__list {
+    display: flex;
+  }
+
+  .contacts__item {
+    width: 50%;
+  }
+
+  .contacts__subtitle,
+  .contacts__description {
+    font-size: 17px;
+  }
+
+  .contacts__subtitle {
+    padding-right: 20px;
+  }
+
+  .contacts__button {
+    display: block;
+    width: 230px;
+    margin: 55px auto;
+  }
 }
