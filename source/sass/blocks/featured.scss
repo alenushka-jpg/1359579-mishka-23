@@ -136,7 +136,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .featured {
+    padding-top: 123px;
+  }
+
+  .featured__title-wrapper {
+    justify-content: start;
+  }
+
   .featured__title {
+    order: 1;
     padding-left: 43px;
     font-size: 53px;
     line-height: 57px;
@@ -146,8 +155,26 @@
     padding-left: 32px;
   }
 
-  .featured__image {
+  .featured__description-wrapper {
+    padding-left: 198px;
+  }
+
+  .featured__text {
+    margin-bottom: 60px;
+  }
+
+  .featured__table {
+    margin-bottom: 109px;
+  }
+
+  .featured__buy {
+    padding-left: 198px;
+  }
+
+  .featured__image,
+  .featured__image-wrapper {
     width: 525px;
     height: 636px;
+    z-index: -1;
   }
 }
