@@ -23,7 +23,7 @@
 
 @media (min-width: $tablet-width) {
   .about-us__title {
-    margin-bottom: 71px;
+    margin-bottom: 97px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -31,16 +31,43 @@
   .about-us__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
+    grid-column-gap: 70px;
   }
 
   .about-us__item {
-    margin-bottom: 100px;
+    margin-bottom: 110px;
     font-size: 20px;
     line-height: 22px;
+
+    &--style {
+      order: 2;
+    }
+
+    &--likes {
+      order: 4;
+    }
+
+    &--made {
+      order: 1;
+    }
+
+    &--support {
+      order: 3;
+    }
+
+    &--gift {
+      order: 5;
+    }
 
     &:last-child {
       margin-bottom: 83px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__container {
+    padding-left: 230px;
+    padding-right: 230px;
   }
 }
