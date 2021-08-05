@@ -69,16 +69,19 @@
     padding-left: 37px;
     padding-top: 25px;
     padding-bottom: 34px;
-    padding-right: 315px;
     align-items: center;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__title {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 140px;
+    padding-right: 140px;
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .promo__link {
+    padding-right: 325px;
   }
 }
