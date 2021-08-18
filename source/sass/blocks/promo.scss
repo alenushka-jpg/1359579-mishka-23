@@ -1,4 +1,5 @@
 .promo {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -7,6 +8,13 @@
   background-position: center 0;
   background-color: $color-gray-150;
   background-repeat: no-repeat;
+}
+
+.promo__delivery {
+  display: none;
+  font-size: 15px;
+  line-height: 24px;
+  color: $color-gray-500;
 }
 
 .promo__title {
@@ -48,6 +56,11 @@
   .promo {
     min-height: 746px;
     background-image: url("../img/hero-tablet.png");
+  }
+
+  .promo__delivery {
+    display: grid;
+    order: 4;
   }
 
   .promo__title {

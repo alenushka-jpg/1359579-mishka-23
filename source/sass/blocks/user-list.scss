@@ -1,3 +1,9 @@
+.user-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .user-list__item {
   padding-top: 26px;
   padding-bottom: 24px;
@@ -14,8 +20,32 @@
   color: $color-black;
 }
 
+.user-list__svg-search {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
+  .user-list {
+    width: 50%;
+    display: flex;
+  }
+
   .user-list__item {
     border: none;
+
+    &--search {
+      padding-left: 33px;
+      padding-right: 31px;
+    }
+  }
+
+  .user-list__link {
+    &--search {
+      font-size: 0;
+    }
+  }
+
+  .user-list__svg-search {
+    display: block;
   }
 }

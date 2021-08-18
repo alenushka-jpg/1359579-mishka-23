@@ -15,7 +15,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .site-list {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    left: 0;
+    top: 100px;
+    z-index: 5;
+  }
+
   .site-list__item {
     border: none;
+    padding-left: 0;
   }
 }

@@ -3,7 +3,13 @@
 }
 
 .logo__img {
-  margin: 0 auto;
   width: 86px;
   height: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__img {
+    width: 113px;
+    height: 46px;
+  }
 }
