@@ -13,3 +13,9 @@
   line-height: 24px;
   color: $color-black;
 }
+
+@media (min-width: $tablet-width) {
+  .user-list__item {
+    border: none;
+  }
+}

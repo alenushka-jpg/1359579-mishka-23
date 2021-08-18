@@ -1,15 +1,16 @@
 .page-header__top {
-  position: relative;
-  display: flex;
-  min-height: 79px;
-  justify-content: center;
-  align-items: center;
   border-bottom: 1px solid $color-gray-100;
+}
+
+.page-header__logo {
+  display: block;
+  margin: 22px 0;
 }
 
 .page-header__burger {
   position: absolute;
-  right: 0;
+  right: 31px;
+  top: 35px;
 }
 
 .page-header__delivery {
@@ -20,6 +21,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header__top {
+    border: none;
+  }
+
   .page-header__delivery {
     display: block;
   }
