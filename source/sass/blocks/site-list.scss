@@ -1,7 +1,9 @@
 .site-list__item {
   padding-top: 26px;
   padding-bottom: 24px;
-  text-align: center;
+  padding-left: 76px;
+  padding-right: 27px;
+  border-bottom: 1px solid $color-gray-100;
 }
 
 .site-list__link {

@@ -1,11 +1,18 @@
-.page-header__container {
-  min-height: 79px;
+.page-header__top {
+  position: relative;
   display: flex;
+  min-height: 79px;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid $color-gray-100;
 }
 
-.page-header__hidden {
+.page-header__burger {
+  position: absolute;
+  right: 0;
+}
+
+.page-header__delivery {
   display: none;
   font-size: 15px;
   line-height: 24px;
@@ -13,7 +20,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__hidden {
+  .page-header__delivery {
     display: block;
   }
 }
