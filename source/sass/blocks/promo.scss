@@ -59,8 +59,10 @@
   }
 
   .promo__delivery {
-    display: grid;
-    order: 4;
+    position: absolute;
+    display: flex;
+    right: 50px;
+    top: 27px;
   }
 
   .promo__title {

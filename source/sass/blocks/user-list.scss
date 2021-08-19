@@ -21,7 +21,10 @@
 }
 
 .user-list__svg-search {
-  display: none;
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: -40px;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,11 +34,16 @@
   }
 
   .user-list__item {
+    padding-left: 70px;
+    padding-right: 50px;
     border: none;
 
     &--search {
-      padding-left: 33px;
-      padding-right: 31px;
+      position: relative;
+      padding-left: 40px;
+      padding-right: 40px;
+      border-right: 1px solid $color-gray-100;
+      border-left: 1px solid $color-gray-100;
     }
   }
 
@@ -47,5 +55,9 @@
 
   .user-list__svg-search {
     display: block;
+    position: absolute;
+    top: 33px;
+    left: 30px;
   }
 }
+
