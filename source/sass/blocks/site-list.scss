@@ -38,3 +38,22 @@
     font-size: 15px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    top: 0;
+    width: 40%;
+  }
+
+  .site-list__link {
+    font-size: 17px;
+    line-height: 24px;
+    z-index: -1;
+  }
+
+  .site-list__item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 37px;
+  }
+}

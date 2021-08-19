@@ -27,3 +27,11 @@
     padding-left: 50px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header__top {
+    position: relative;
+    width: 60%;
+    justify-content: flex-end;
+  }
+}

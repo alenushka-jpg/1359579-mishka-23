@@ -90,6 +90,8 @@
 
 @media (min-width: $desktop-width) {
   .promo__title {
+    max-width: 1000px;
+    margin: 0 auto;
     padding-left: 140px;
     padding-right: 140px;
     font-size: 53px;

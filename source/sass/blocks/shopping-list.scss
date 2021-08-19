@@ -14,3 +14,15 @@
   line-height: 24px;
   color: $color-black;
 }
+
+@media (min-width: $desktop-width) {
+  .shopping-list {
+    display: flex;
+    position: absolute;
+    left: 50px;
+    top: 90px;
+    z-index: 1;
+    min-width: 320px;
+    justify-content: space-between;
+  }
+}
