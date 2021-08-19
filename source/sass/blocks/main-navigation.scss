@@ -4,21 +4,14 @@
   }
 }
 
+.page-header__burger {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .main-navigation__list {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-
-@media (min-width: $tablet-width) {
-  .page-header__burger {
-    display: none;
-  }
-
-  .main-navigation {
-    &--closed {
-      display: block;
-    }
-  }
 }

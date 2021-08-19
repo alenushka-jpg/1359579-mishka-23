@@ -1,5 +1,25 @@
+.page-header {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .page-header__top {
   border-bottom: 1px solid $color-gray-100;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    display: flex;
+    width: 50%;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 60%;
+    justify-content: flex-end;
+  }
 }
 
 .page-header__logo {
@@ -12,26 +32,4 @@
   position: absolute;
   right: 31px;
   top: 35px;
-}
-
-@media (min-width: $tablet-width) {
-  .page-header {
-    display: flex;
-    justify-content: center;
-  }
-
-  .page-header__top {
-    border: none;
-    display: flex;
-    width: 50%;
-    padding-left: 50px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__top {
-    position: relative;
-    width: 60%;
-    justify-content: flex-end;
-  }
 }
