@@ -1,7 +1,7 @@
 .reviews {
   @media (min-width: $tablet-width) {
     padding-top: 82px;
-    background-image: url("../../img/carpet.png");
+    background-image: url("../img/carpet.png");
     background-repeat: no-repeat;
   }
 
@@ -134,11 +134,11 @@
   }
 
   &--prev {
-    background-image: url("../../img/huge-arrow-left.svg.svg");
+    background-image: url("../img/huge-arrow-left.svg.svg");
   }
 
   &--next {
-    background-image: url("../../img/huge-arrow-right.svg.svg");
+    background-image: url("../img/huge-arrow-right.svg.svg");
   }
 }
 
