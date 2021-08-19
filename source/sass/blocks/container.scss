@@ -3,10 +3,8 @@
   margin-right: auto;
   padding-left: 30px;
   padding-right: 30px;
-}
 
-@media (min-width: $tablet-width) {
-  .container {
+  @media (min-width: $tablet-width) {
     padding-left: 50px;
     padding-right: 50px;
   }

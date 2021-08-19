@@ -1,7 +1,20 @@
+.about-us__container {
+  @media (min-width: $desktop-width) {
+    padding-left: 230px;
+    padding-right: 230px;
+  }
+}
+
 .about-us__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 70px;
+  }
 }
 
 .about-us__title {
@@ -11,6 +24,12 @@
   font-size: 25px;
   line-height: 30px;
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 97px;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .about-us__item {
@@ -19,22 +38,8 @@
   font-size: 17px;
   line-height: 20px;
   color: $color-black;
-}
 
-@media (min-width: $tablet-width) {
-  .about-us__title {
-    margin-bottom: 97px;
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  .about-us__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 70px;
-  }
-
-  .about-us__item {
+  @media (min-width: $tablet-width) {
     margin-bottom: 110px;
     font-size: 20px;
     line-height: 22px;
@@ -62,12 +67,5 @@
     &:last-child {
       margin-bottom: 83px;
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .about-us__container {
-    padding-left: 230px;
-    padding-right: 230px;
   }
 }
