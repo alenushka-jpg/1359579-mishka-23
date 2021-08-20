@@ -37,6 +37,9 @@
   color: $color-black;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
     order: -2;
     margin-bottom: 35px;
     font-size: 43px;
