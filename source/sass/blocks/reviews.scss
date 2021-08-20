@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 50px;
+    padding-left: 220px;
   }
 }
 
@@ -69,8 +69,13 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
   }
 }
 
@@ -113,7 +118,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 50px;
+    right: 0;
     bottom: 0;
     width: 175px;
     margin-bottom: 47px;
