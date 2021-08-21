@@ -1,11 +1,9 @@
 .about-us {
   margin-bottom: 83px;
-}
 
-.about-us__container {
   @media (min-width: $desktop-width) {
-    padding-left: 230px;
-    padding-right: 230px;
+    max-width: 700px;
+    padding: 0;
   }
 }
 
@@ -67,5 +65,9 @@
     &--gift {
       order: 5;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 315px;
   }
 }
