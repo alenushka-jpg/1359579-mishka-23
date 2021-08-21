@@ -1,3 +1,7 @@
+.about-us {
+  margin-bottom: 60px;
+}
+
 .about-us__container {
   @media (min-width: $desktop-width) {
     padding-left: 230px;
@@ -26,21 +30,21 @@
   color: $color-black;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 97px;
+    margin-bottom: 43px;
     font-size: 43px;
     line-height: 50px;
   }
 }
 
 .about-us__item {
-  margin-bottom: 80px;
+  margin-bottom: 57px;
+  padding-top: 53px;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   color: $color-black;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 110px;
     font-size: 20px;
     line-height: 22px;
 
@@ -62,10 +66,6 @@
 
     &--gift {
       order: 5;
-    }
-
-    &:last-child {
-      margin-bottom: 83px;
     }
   }
 }
