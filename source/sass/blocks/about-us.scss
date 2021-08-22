@@ -8,12 +8,12 @@
 }
 
 .about-us__list {
-  list-style: none;
+  display: grid;
   margin: 0;
   padding: 0;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 70px;
     grid-row-gap: 57px;
@@ -22,7 +22,7 @@
 
 .about-us__title {
   margin: 0;
-  margin-bottom: 82px;
+  margin-bottom: 28px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -45,26 +45,6 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
-
-    &--style {
-      order: 2;
-    }
-
-    &--likes {
-      order: 4;
-    }
-
-    &--made {
-      order: 1;
-    }
-
-    &--support {
-      order: 3;
-    }
-
-    &--gift {
-      order: 5;
-    }
   }
 
   @media (min-width: $desktop-width) {
