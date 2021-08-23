@@ -14,11 +14,23 @@
   border: none;
   margin: 0;
   padding: 0;
+
+  &--type,
+  &--color {
+    .user-data__legend {
+      margin-bottom: 25px;
+    }
+  }
+
+  &--user {
+    .user-data__legend {
+      margin-bottom: 29px;
+    }
+  }
 }
 
 .user-data__legend {
   padding: 0;
-  margin-bottom: 20px;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
@@ -30,6 +42,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.user-data__item {
+  &:not(:first-child) {
+    margin-top: 21px;
+  }
 }
 
 .user-data__footer {
