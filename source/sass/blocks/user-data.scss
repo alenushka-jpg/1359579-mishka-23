@@ -3,6 +3,11 @@
   margin-bottom: 37px;
   font-size: 13px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .user-data__fieldset {
@@ -13,6 +18,7 @@
 
 .user-data__legend {
   padding: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
