@@ -1,6 +1,12 @@
 .contacts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 46px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: grid;
     grid-template-columns: repeat(6, 1fr);
   }
 }
@@ -14,6 +20,9 @@
   color: $color-black;
 
   @media (min-width: $tablet-width) {
+    grid-column: 1/4;
+    margin-top: 22px;
+    margin-bottom: 45px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -27,20 +36,33 @@
   }
 }
 
-.contacts__list {
-  margin: 0;
-  margin-bottom: 62px;
-
-  @media (min-width: $desktop-width) {
-    grid-column: 2/4;
+.contacts__data {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/5;
   }
 
   @media (min-width: $desktop-width) {
+    grid-column: 2/4;
     margin-bottom: 50px;
   }
 }
 
+.contacts__list {
+  margin: 0;
+  margin-bottom: 62px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 49px;
+  }
+}
+
 .contacts__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 50%;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     margin-bottom: 34px;
@@ -60,21 +82,13 @@
 
 .contacts__subtitle {
   padding-right: 25px;
-
-  @media (min-width: $tablet-width) {
-    padding-right: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 25px;
-  }
 }
 
 .contacts__description {
   margin: 0;
 
-  @media (min-width: $desktop-width) {
-    padding-right: 25px;
+  @media (min-width: $tablet-width) {
+    padding-right: 50px;
   }
 }
 
@@ -83,6 +97,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 -50px;
+    grid-column: 1/5;
   }
 
   @media (min-width: $desktop-width) {
@@ -93,6 +108,11 @@
 }
 
 .contacts__map-image {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 457px;
+  }
+
   @media (min-width: $desktop-width) {
     height: 457px;
     width: 100%;
@@ -106,6 +126,7 @@
     display: block;
     width: 230px;
     margin: 55px auto;
+    grid-column: 2/4;
   }
 
   @media (min-width: $desktop-width) {
