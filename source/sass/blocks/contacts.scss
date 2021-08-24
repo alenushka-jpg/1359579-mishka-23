@@ -8,6 +8,8 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(6, 1fr);
+    padding-top: 71px;
+    margin-bottom: 105px;
   }
 }
 
@@ -37,7 +39,10 @@
 }
 
 .contacts__data {
+  margin-bottom: 62px;
+
   @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
     grid-column: 1/5;
   }
 
@@ -49,11 +54,13 @@
 
 .contacts__list {
   margin: 0;
-  margin-bottom: 62px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
   }
 }
 
@@ -65,6 +72,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    width: auto;
     margin-bottom: 34px;
   }
 }
@@ -89,6 +97,10 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 25px;
   }
 }
 
