@@ -42,7 +42,7 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  color: #000000;
+  color: $color-black;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 372px;
@@ -95,12 +95,11 @@
     padding-left: 37px;
     padding-top: 25px;
     padding-bottom: 34px;
-    align-items: center;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-right: 325px;
-  }
+  // @media (min-width: $desktop-width) {
+  //   padding-right: 325px;
+  // }
 }
 
 .promo__text {
@@ -108,4 +107,9 @@
   font-size: 19px;
   line-height: 24px;
   color: $color-white;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    max-width: 140px;
+  }
 }
