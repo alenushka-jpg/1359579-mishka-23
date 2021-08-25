@@ -1,8 +1,11 @@
 .page-header {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: center;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 83px 265px;
+
+  // @media (min-width: $tablet-width) {
+  //   display: flex;
+  //   justify-content: center;
+  // }
 }
 
 .page-header__top {
@@ -10,22 +13,27 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    display: flex;
-    width: 50%;
-    padding-left: 50px;
+    grid-column: 1/2;
+    // display: flex;
+    // width: 50%;
+    // padding-left: 50px;
   }
 
-  @media (min-width: $desktop-width) {
-    position: relative;
-    width: 60%;
-    justify-content: flex-end;
-  }
+  // @media (min-width: $desktop-width) {
+  //   position: relative;
+  //   width: 60%;
+  //   justify-content: flex-end;
+  // }
 }
 
 .page-header__logo {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
   margin: 22px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .page-header__burger {
