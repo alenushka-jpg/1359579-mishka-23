@@ -12,25 +12,11 @@
   @media (min-width: $tablet-width) {
     min-height: 746px;
     background-image: url("../img/hero-tablet.png");
-    background-position: bottom 122px;
+    background-position: center;
   }
 
   @media (min-width: $desktop-width) {
     background-position: bottom 130px;
-  }
-}
-
-.promo__delivery {
-  display: none;
-  font-size: 15px;
-  line-height: 24px;
-  color: $color-gray-500;
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    display: flex;
-    right: 50px;
-    top: 27px;
   }
 }
 
