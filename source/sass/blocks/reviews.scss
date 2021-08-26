@@ -2,7 +2,9 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 38px;
     padding-top: 82px;
+    padding-bottom: 47px;
     background-image: url("../img/carpet.png");
     background-repeat: no-repeat;
   }
@@ -70,12 +72,13 @@
 
 .reviews__quote-text {
   margin: 0;
-  // margin-bottom: 33px;
+  margin-bottom: 33px;
   font-size: 15px;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    // margin-bottom: 61px;
+    margin-bottom: 61px;
+
     font-size: 17px;
     line-height: 30px;
   }
@@ -84,16 +87,6 @@
   //   margin-bottom: 44px;
   // }
 }
-
-// .reviews__quote-author {
-//   @media (min-width: $tablet-width) {
-//     position: relative;
-//     display: flex;
-//     justify-content: space-between;
-//     flex-wrap: wrap;
-//     margin-bottom: 68px;
-//   }
-// }
 
 .reviews__author {
   display: block;
@@ -112,7 +105,6 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    // padding-right: 384px;
     font-size: 18px;
   }
 }
@@ -122,15 +114,12 @@
   border: solid 1px $color-gray-100;
   margin-bottom: 38px;
 
-  // @media (min-width: $tablet-width) {
-  //   // position: absolute;
-  //   // right: 0;
-  //   // bottom: 0;
-  //   // width: 175px;
-  //   // margin-bottom: 47px;
-  //   grid-column: 4/5;
-  //   grid-row: 2/3;
-  // }
+  @media (min-width: $tablet-width) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    align-self: end;
+    margin-bottom: 0;
+  }
 
   @media (min-width: $desktop-width) {
     right: 0;
