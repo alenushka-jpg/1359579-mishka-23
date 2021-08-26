@@ -11,7 +11,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 220px;
-    background-position: left 50px center;
+    background-position: left 50px top;
   }
 }
 
@@ -37,17 +37,13 @@
 
 .reviews__title {
   margin: 0;
-  // margin-bottom: 15px;
+  margin-bottom: 14px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: $color-black;
 
   @media (min-width: $tablet-width) {
-    // display: flex;
-    // width: 300px;
-    // flex-wrap: wrap;
-    // order: -2;
     grid-column: 1/3;
     margin-bottom: 0;
     font-size: 43px;
@@ -68,6 +64,11 @@
 
 .reviews__quote {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .reviews__quote-text {
@@ -77,8 +78,8 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
+    grid-column: 1/5;
     margin-bottom: 61px;
-
     font-size: 17px;
     line-height: 30px;
   }
@@ -87,6 +88,16 @@
   //   margin-bottom: 44px;
   // }
 }
+
+.reviews__author-data {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/4;
+    margin-bottom: 0;
+  }
+}
+
 
 .reviews__author {
   display: block;
@@ -117,8 +128,12 @@
   @media (min-width: $tablet-width) {
     grid-column: 4/5;
     grid-row: 2/3;
+    justify-content: space-evenly;
     align-self: end;
+    padding-top: 16px;
+    padding-bottom: 16px;
     margin-bottom: 0;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -145,6 +160,11 @@
 
   &--next {
     background-image: url("../img/huge-arrow-right.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 26px;
   }
 }
 
