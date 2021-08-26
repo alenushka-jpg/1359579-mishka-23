@@ -3,6 +3,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 185px 1fr;
+  }
 }
 
 .site-list__item {
@@ -21,11 +25,11 @@
     // }
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 37px;
-  }
+  // @media (min-width: $desktop-width) {
+  //   padding-top: 30px;
+  //   padding-bottom: 30px;
+  //   padding-right: 37px;
+  // }
 }
 
 .site-list__link {
@@ -43,6 +47,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 33px;
+    padding-bottom: 32px;
     font-size: 17px;
     line-height: 24px;
     z-index: -1;

@@ -5,6 +5,10 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 83px 265px;
+  }
 }
 
 .page-header__top {
@@ -13,6 +17,11 @@
   @media (min-width: $tablet-width) {
     border: none;
     grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/5;
+    grid-row: 1/2;
   }
 }
 
@@ -39,5 +48,9 @@
     display: grid;
     grid-column: 4/5;
     text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 6/7;
   }
 }
