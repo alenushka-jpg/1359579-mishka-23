@@ -2,15 +2,9 @@
   display: none;
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
   }
 }
-
-// .shopping-list__item {
-//   padding-top: 26px;
-//   padding-bottom: 24px;
-// }
 
 .shopping-list__link {
   text-decoration: none;
@@ -22,12 +16,8 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    font-size: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
-}
-
-.shopping-list__text {
-  display: inline-block;
-  font-size: 15px;
 }
