@@ -2,6 +2,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+  }
 }
 
 .user-list__item {
@@ -16,32 +25,40 @@
 
 .user-list__link {
   display: block;
+  padding-top: 23px;
+  padding-bottom: 26px;
+  padding-right: 25px;
+  padding-left: 76px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-black;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    &--search {
-      text-align: center;
+    padding-top: 33px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
 
-      .user-list__text {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-      }
+    &:not(:last-of-type) {
+      padding-right: 0;
     }
   }
 }
 
 .user-list__text {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: $color-black;
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }
-
