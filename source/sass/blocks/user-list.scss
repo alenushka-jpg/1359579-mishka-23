@@ -17,6 +17,7 @@
   border-bottom: 1px solid $color-gray-100;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     text-align: end;
     border: none;
     padding: 0;
@@ -38,16 +39,28 @@
   @media (min-width: $tablet-width) {
     padding-top: 33px;
     padding-left: 32px;
-    padding-right: 32px;
+    padding-right: 0;
     padding-bottom: 32px;
 
-    &:not(:last-of-type) {
-      padding-right: 0;
+    &--search {
+      position: relative;
+      min-width: 83px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 61px;
   }
 }
 
-.user-list__text {
+.user-list__svg-search {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 30px;
+  }
+}
+
+.user-list__search {
   @media (min-width: $tablet-width) {
     text-align: center;
     position: absolute;
