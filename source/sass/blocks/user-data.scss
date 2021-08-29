@@ -11,21 +11,14 @@
 }
 
 .user-data__fieldset {
-  border: none;
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
+  border: none;
 
-  &--type,
-  &--color {
-    .user-data__legend {
-      margin-bottom: 25px;
-    }
-  }
-
-  &--user {
-    .user-data__legend {
-      margin-bottom: 29px;
-    }
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
   }
 }
 
