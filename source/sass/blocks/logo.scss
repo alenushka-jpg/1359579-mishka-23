@@ -7,10 +7,6 @@
   width: 86px;
   height: 35px;
 
-  &--footer {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 113px;

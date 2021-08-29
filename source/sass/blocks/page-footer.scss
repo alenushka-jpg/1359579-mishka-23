@@ -1,7 +1,18 @@
 .page-footer {
+  padding-top: 25px;
   background-color: $color-gray-50;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-footer__logo {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
