@@ -1,8 +1,13 @@
 .copyright__link {
+  display: flex;
+  justify-content: center;
   text-decoration: none;
 }
 
 .copyright__text {
+  margin-top: 29px;
+  margin-bottom: 32px;
+  margin-right: 27px;
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;

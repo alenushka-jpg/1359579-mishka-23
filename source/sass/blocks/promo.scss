@@ -1,27 +1,70 @@
 .promo {
+  position: relative;
   min-height: 486px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-image: url("../img/hero-mobile.png");
-  background-color: $color-gray-300;
+  background-position: left 50% bottom 140px;
+  background-color: $color-gray-150;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    min-height: 746px;
+    background-image: url("../img/hero-tablet.png");
+    background-position: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: bottom 130px;
+  }
 }
 
 .promo__title {
-  margin: 0;
-  padding-top: 73px;
+  margin-top: 0;
+  margin-bottom: 120px;
+  padding-top: 76px;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 372px;
+    padding-top: 154px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    margin-bottom: 355px;
+    padding-left: 140px;
+    padding-right: 140px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.promo__type {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .promo__link {
   text-decoration: none;
   display: block;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 24px;
-  color: $color-white;
+  margin: 0 -30px;
+  padding-top: 21px;
+  padding-left: 30px;
+  padding-right: 160px;
+  padding-bottom: 23px;
 
   &--accesories {
     background-color: $color-green-200;
@@ -29,5 +72,30 @@
 
   &--toys {
     background-color: $color-green-300;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    min-height: 119px;
+    margin: 0;
+    padding-left: 37px;
+    padding-top: 25px;
+    padding-bottom: 34px;
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   padding-right: 325px;
+  // }
+}
+
+.promo__text {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: $color-white;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    max-width: 140px;
   }
 }

@@ -1,16 +1,23 @@
 .shopping-list {
   display: none;
-}
 
-.shopping-list__item {
-  padding-top: 26px;
-  padding-bottom: 24px;
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .shopping-list__link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 40px;
   text-decoration: none;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 24px;
   color: $color-black;
+
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

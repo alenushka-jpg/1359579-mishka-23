@@ -1,1 +1,69 @@
-// это комментарий
+.page-header {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 83px 265px;
+    grid-template-areas:
+      "logo user-list user-list"
+      "navigation navigation delivery";
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 430px 190px 430px;
+    grid-template-areas:
+      "navigation logo user-list"
+      "navigation . delivery";
+    justify-content: center;
+  }
+}
+
+.page-header__top {
+  border-bottom: 1px solid $color-gray-100;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    grid-area: logo;
+  }
+}
+
+.page-header__logo {
+  padding: 22px 0;
+}
+
+.page-header__burger {
+  position: absolute;
+  right: 31px;
+  top: 35px;
+}
+
+.page-header__navigation {
+  @media (min-width: $tablet-width) {
+    grid-area: navigation;
+  }
+}
+
+.page-header__user-list {
+  @media (min-width: $tablet-width) {
+    grid-area: user-list;
+  }
+}
+
+.page-header__delivery {
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: end;
+  color: $color-gray-500;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    grid-area: delivery;
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   grid-column: 6/7;
+  // }
+}
