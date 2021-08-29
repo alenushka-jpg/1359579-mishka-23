@@ -1,6 +1,11 @@
 .modal-window {
   padding-top: 28px;
   box-shadow: 0 5px 10px rgba($color-black, 0.25);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 37px;
+    width: 566px;
+  }
 }
 
 .modal-window__title {
@@ -13,6 +18,10 @@
   line-height: 30px;
   color: $color-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .modal-window__select {
@@ -30,6 +39,12 @@
   margin-bottom: 31px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .modal-window__label {
@@ -46,4 +61,10 @@
   color: $color-white;
   background-color: $color-green-200;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+    margin-left: 58px;
+    margin-right: 58px;
+  }
 }
