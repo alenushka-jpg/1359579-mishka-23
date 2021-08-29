@@ -3,12 +3,23 @@
   margin-bottom: 37px;
   font-size: 13px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .user-data__fieldset {
-  border: none;
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
 }
 
 .user-data__legend {
@@ -24,6 +35,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.user-data__item {
+  &:not(:first-child) {
+    margin-top: 21px;
+  }
 }
 
 .user-data__footer {

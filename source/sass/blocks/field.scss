@@ -10,7 +10,6 @@
 
 .field__label {
   display: block;
-  margin-bottom: 17px;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -18,11 +17,17 @@
 }
 
 .field__input {
-  padding: 0;
   font-size: 17px;
   line-height: 18px;
+  border: none;
 
   &--data {
-    border: none;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  &--tel {
+    padding-top: 14px;
+    padding-bottom: 20px;
   }
 }

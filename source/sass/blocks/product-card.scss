@@ -1,10 +1,21 @@
+.product-card {
+  border: 1px solid $color-gray-100;
+}
+
 .product-card__img-link {
   display: block;
 }
 
+.product-cart__description {
+  padding-top: 27px;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
 .product-card__title-link {
-  text-decoration: none;
   display: block;
+  margin-bottom: 6px;
+  text-decoration: none;
 }
 
 .product-card__title {
@@ -14,19 +25,22 @@
   color: $color-black;
 }
 
-.product-card__description {
+.product-card__size {
   display: block;
+  margin-bottom: 17px;
   font-size: 13px;
   color: $color-black;
 }
 
 .product-card__price {
   display: block;
+  padding-top: 22px;
   padding-bottom: 26px;
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
   color: $color-black;
+  border-top: 1px solid $color-gray-100;
 }
 
 .product-card__basket {
