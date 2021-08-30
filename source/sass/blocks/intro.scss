@@ -12,6 +12,14 @@
       margin-bottom: 17px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    &--catalog {
+      .intro__title {
+        margin-bottom: 67px;
+      }
+    }
+  }
 }
 
 .intro__title {
@@ -23,6 +31,8 @@
   color: $color-black;
 
   @media (min-width: $tablet-width) {
+    padding-top: 101px;
+    padding-bottom: 87px;
     font-size: 43px;
     line-height: 50px;
   }
