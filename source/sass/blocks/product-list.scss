@@ -6,6 +6,12 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 53px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 316px);
+    column-gap: 51px;
+  }
 }
 
 .product-list__item {
