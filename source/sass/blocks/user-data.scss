@@ -16,6 +16,25 @@
   padding: 0;
   border: none;
 
+  &--type,
+  &--color {
+    .user-data__legend {
+      padding-bottom: 25px;
+    }
+  }
+
+  &--user {
+    .user-data__legend {
+      padding-bottom: 29px;
+    }
+  }
+
+  &--contacts {
+    .user-data__legend {
+      padding-bottom: 4px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -29,6 +48,13 @@
   line-height: 16px;
   color: $color-green-200;
   text-transform: uppercase;
+
+
+  @media (min-width: $tablet-width) {
+    float: left;
+    padding-top: 16px;
+    padding-bottom: 18px;
+  }
 }
 
 .user-data__list {
