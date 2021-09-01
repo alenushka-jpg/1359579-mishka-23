@@ -1,6 +1,5 @@
 .field {
   display: block;
-  border-bottom: 2px solid $color-black;
 
   &--phone {
     margin-bottom: 34px;
@@ -43,15 +42,11 @@
   font-size: 17px;
   line-height: 18px;
   border: none;
+  border-bottom: 2px solid $color-gray-500;
 
   &--data {
     padding-top: 17px;
     padding-bottom: 17px;
-  }
-
-  &--tel,
-  &--email {
-    background-color: $color-gray-50;
   }
 
   &--tel {
@@ -69,5 +64,10 @@
     padding-left: 18px;
     padding-right: 18px;
     padding-bottom: 18px;
+
+    &--tel,
+    &--email {
+      background-color: $color-gray-50;
+    }
   }
 }

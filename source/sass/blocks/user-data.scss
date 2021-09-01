@@ -25,11 +25,6 @@
     }
   }
 
-  &--contacts,
-  &--color {
-    background-color: $color-gray-50;
-  }
-
   &--user {
     padding-bottom: 34px;
 
@@ -53,6 +48,11 @@
     grid-template-columns: 1fr 3fr;
     padding-bottom: 50px;
     padding-top: 50px;
+
+    &--contacts,
+    &--color {
+      background-color: $color-gray-50;
+    }
   }
 }
 
@@ -67,6 +67,7 @@
 
   @media (min-width: $tablet-width) {
     float: left;
+    grid-column: 1/2;
     margin: 0;
     padding-top: 16px;
   }
@@ -76,6 +77,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    &--color {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }
 
 .user-data__item {
