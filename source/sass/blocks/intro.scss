@@ -19,6 +19,26 @@
         margin-bottom: 67px;
       }
     }
+
+    &--form {
+      .intro__title {
+        margin-bottom: 54px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--catalog {
+      .intro__title {
+        margin-bottom: 111px;
+      }
+    }
+
+    &--form {
+      .intro__title {
+        margin-bottom: 98px;
+      }
+    }
   }
 }
 
