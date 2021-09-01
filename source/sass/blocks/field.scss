@@ -49,6 +49,11 @@
     padding-bottom: 17px;
   }
 
+  &--tel,
+  &--email {
+    background-color: $color-gray-50;
+  }
+
   &--tel {
     padding-top: 14px;
     padding-bottom: 20px;

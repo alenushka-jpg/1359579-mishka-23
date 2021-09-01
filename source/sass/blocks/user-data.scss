@@ -12,7 +12,8 @@
 
 .user-data__fieldset {
   margin: 0;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   border: none;
 
   &--type,
@@ -22,6 +23,11 @@
     .user-data__legend {
       margin-bottom: 25px;
     }
+  }
+
+  &--contacts,
+  &--color {
+    background-color: $color-gray-50;
   }
 
   &--user {
@@ -60,7 +66,6 @@
   @media (min-width: $tablet-width) {
     float: left;
     padding-top: 16px;
-    padding-bottom: 18px;
   }
 }
 
@@ -80,12 +85,25 @@
 
 .user-data__footer {
   margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 109px;
+  }
 }
 
 .user-data__footnote {
   margin: 0;
   margin-bottom: 30px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-bottom: 0;
+    align-self: center;
+    text-align: end;
+  }
 }
 
 .user-data__button {
