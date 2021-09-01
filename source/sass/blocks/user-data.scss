@@ -12,26 +12,33 @@
 
 .user-data__fieldset {
   margin: 0;
-  margin-bottom: 30px;
   padding: 0;
   border: none;
 
   &--type,
   &--color {
+    margin-bottom: 30px;
+
     .user-data__legend {
-      padding-bottom: 25px;
+      margin-bottom: 25px;
     }
   }
 
   &--user {
+    margin-bottom: 34px;
+
     .user-data__legend {
-      padding-bottom: 29px;
+      margin-bottom: 29px;
     }
   }
 
   &--contacts {
+    margin-bottom: 34px;
+  }
+
+  &--message {
     .user-data__legend {
-      padding-bottom: 4px;
+      margin-bottom: 22px;
     }
   }
 
@@ -64,8 +71,10 @@
 }
 
 .user-data__item {
-  &:not(:first-child) {
-    margin-top: 21px;
+  margin-bottom: 21px;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
