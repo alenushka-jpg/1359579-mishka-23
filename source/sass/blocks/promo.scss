@@ -14,10 +14,6 @@
     background-image: url("../img/hero-tablet.png");
     background-position: center;
   }
-
-  @media (min-width: $desktop-width) {
-    background-position: bottom 130px;
-  }
 }
 
 .promo__title {
@@ -40,8 +36,8 @@
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;
     margin-bottom: 355px;
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-left: 170px;
+    padding-right: 170px;
     font-size: 53px;
     line-height: 57px;
   }
