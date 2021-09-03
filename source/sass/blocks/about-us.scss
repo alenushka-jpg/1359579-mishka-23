@@ -42,8 +42,16 @@
   line-height: 20px;
   color: $color-black;
 
+  &:nth-child(odd) {
+    order: -1;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
+
+    &:nth-child(odd) {
+      order: 0;
+    }
   }
 }
