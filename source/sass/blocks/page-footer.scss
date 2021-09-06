@@ -1,11 +1,14 @@
 .page-footer {
   padding-top: 25px;
+  padding-bottom: 23px;
   background-color: $color-gray-50;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 51px;
+    padding-bottom: 58px;
   }
 }
 

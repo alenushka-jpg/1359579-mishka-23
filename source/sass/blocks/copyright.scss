@@ -1,12 +1,18 @@
 .copyright__link {
   display: flex;
   justify-content: center;
+  margin-top: 22px;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .copyright__text {
-  margin-top: 29px;
-  margin-bottom: 32px;
+  align-self: center;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-right: 27px;
   font-weight: 700;
   font-size: 19px;
