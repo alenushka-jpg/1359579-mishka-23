@@ -22,7 +22,14 @@
   }
 }
 
+.user-data__group:nth-child(odd) {
+  @media (min-width: $tablet-width) {
+    background-color: $color-gray-50;
+  }
+}
+
 .user-data__fieldset {
+  display: grid;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
@@ -57,20 +64,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: 1fr 3fr;
-    padding-bottom: 50px;
     padding-top: 50px;
-
-    &--contacts,
-    &--color {
-      background-color: $color-gray-50;
-    }
+    padding-bottom: 50px;
   }
 
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
   }
 }
 
@@ -118,11 +119,11 @@
 }
 
 .user-data__footer {
+  display: grid;
   margin-bottom: 55px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 230px 1fr;
     column-gap: 109px;
   }
 

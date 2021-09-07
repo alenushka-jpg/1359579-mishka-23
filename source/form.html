@@ -71,110 +71,120 @@
           Мы будем рады воплотить в жизнь ваши пожелания!
           Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
-        <fieldset class="user-data__fieldset user-data__fieldset--type">
-          <legend class="user-data__legend">тип</legend>
-          <ul class="user-data__list user-data__list--type">
-            <li class="user-data__item">
-              <label class="radio-button">
-                <input class="radio-button__input" name="type" type="radio" value="toy">
-                <span class="radio-button__label">Аксессуар для интерьера</span>
-              </label>
-            </li>
-            <li class="user-data__item">
-              <label class="radio-button">
-                <input class="radio-button__input" name="type" type="radio" value="accessory">
-                <span class="radio-button__label">Детская игрушка</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="user-data__fieldset user-data__fieldset--color">
-          <legend class="user-data__legend">цвет</legend>
-          <ul class="user-data__list user-data__list--color">
-            <li class="user-data__item">
-              <label class="checkbox">
-                <input class="checkbox__input" name="color" type="checkbox" value="white">
-                <span class="checkbox__label">Белый</span>
-              </label>
-            </li>
-            <li class="user-data__item">
-              <label class="checkbox">
-                <input class="checkbox__input" name="color" type="checkbox" value="grey">
-                <span class="checkbox__label">Серый</span>
-              </label>
-            </li>
-            <li class="user-data__item">
-              <label class="checkbox">
-                <input class="checkbox__input" name="color" type="checkbox" value="tiffany">
-                <span class="checkbox__label">«Тиффани»</span>
-              </label>
-            </li>
-            <li class="user-data__item">
-              <label class="checkbox">
-                <input class="checkbox__input" name="color" type="checkbox" value="black">
-                <span class="checkbox__label">Черный</span>
-              </label>
-            </li>
-            <li class="user-data__item">
-              <label class="checkbox">
-                <input class="checkbox__input" name="color" type="checkbox" value="pink">
-                <span class="checkbox__label">Розовый</span>
-              </label>
-            </li>
-            <li class="user-data__item">
-              <label class="checkbox">
-                <input class="checkbox__input" name="color" type="checkbox" value="orange">
-                <span class="checkbox__label">Оранжевый</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="user-data__fieldset user-data__fieldset--user">
-          <h2 class="visually-hidden">Введите ваше фио</h2>
-          <legend class="user-data__legend">фио</legend>
-          <ul class="user-data__list user-data__list--user">
-            <li class="user-data__item">
-              <label class="field">
-                <span class="field__label">Имя:</span>
-                <input class="field__input field__input--data" type="text" name="last-name" placeholder="Введите ваше имя*">
-                <span class="visually-hidden">Введите ваше имя*</span>
-              </label>
-            </li>
-            <li class="user-data__item">
-              <label class="field">
-                <span class="field__label">Фамилия:</span>
-                <input class="field__input field__input--data" type="text" name="second-name" placeholder="Укажите фамилию*">
-                <span class="visually-hidden">Укажите фамилию*</span>
-              </label>
-            </li>
-            <li class="user-data__item">
-              <label class="field">
-                <span class="field__label">Отчество:</span>
-                <input class="field__input field__input--data" type="text" name="first-name" placeholder="Отчество, если желаете">
-                <span class="visually-hidden">Отчество, если желаете</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="user-data__fieldset user-data__fieldset--contacts">
-          <legend class="user-data__legend">тел</legend>
-          <label class="field field--phone">
-            <input class="field__input field__input--tel" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-            <span class="visually-hidden">Введите ваш номер телефона</span>
-          </label>
-          <legend class="user-data__legend">e-mail</legend>
-          <label class="field field--email">
-            <input class="field__input field__input--email" type="email" name="email" placeholder="Ваш Email*">
-            <span class="visually-hidden">Введите ваш емайл</span>
-          </label>
-        </fieldset>
-        <fieldset class="user-data__fieldset user-data__fieldset--message">
-          <legend class="user-data__legend">доп</legend>
-          <label class="field field--textarea">
-            <span class="visually-hidden">Ваши пожелания</span>
-            <textarea class="field__input" name="message">Опишите все ваши пожелания к заказу</textarea>
-          </label>
-        </fieldset>
+        <div class="user-data__group">
+          <fieldset class="user-data__fieldset user-data__fieldset--type container">
+            <legend class="user-data__legend">тип</legend>
+            <ul class="user-data__list user-data__list--type">
+              <li class="user-data__item">
+                <label class="radio-button">
+                  <input class="radio-button__input" name="type" type="radio" value="toy">
+                  <span class="radio-button__label">Аксессуар для интерьера</span>
+                </label>
+              </li>
+              <li class="user-data__item">
+                <label class="radio-button">
+                  <input class="radio-button__input" name="type" type="radio" value="accessory">
+                  <span class="radio-button__label">Детская игрушка</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="user-data__group">
+          <fieldset class="user-data__fieldset user-data__fieldset--color container">
+            <legend class="user-data__legend">цвет</legend>
+            <ul class="user-data__list user-data__list--color">
+              <li class="user-data__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" name="color" type="checkbox" value="white">
+                  <span class="checkbox__label">Белый</span>
+                </label>
+              </li>
+              <li class="user-data__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" name="color" type="checkbox" value="grey">
+                  <span class="checkbox__label">Серый</span>
+                </label>
+              </li>
+              <li class="user-data__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" name="color" type="checkbox" value="tiffany">
+                  <span class="checkbox__label">«Тиффани»</span>
+                </label>
+              </li>
+              <li class="user-data__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" name="color" type="checkbox" value="black">
+                  <span class="checkbox__label">Черный</span>
+                </label>
+              </li>
+              <li class="user-data__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" name="color" type="checkbox" value="pink">
+                  <span class="checkbox__label">Розовый</span>
+                </label>
+              </li>
+              <li class="user-data__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" name="color" type="checkbox" value="orange">
+                  <span class="checkbox__label">Оранжевый</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="user-data__group">
+          <fieldset class="user-data__fieldset user-data__fieldset--user container">
+            <h2 class="visually-hidden">Введите ваше фио</h2>
+            <legend class="user-data__legend">фио</legend>
+            <ul class="user-data__list user-data__list--user">
+              <li class="user-data__item">
+                <label class="field">
+                  <span class="field__label">Имя:</span>
+                  <input class="field__input field__input--data" type="text" name="last-name" placeholder="Введите ваше имя*">
+                  <span class="visually-hidden">Введите ваше имя*</span>
+                </label>
+              </li>
+              <li class="user-data__item">
+                <label class="field">
+                  <span class="field__label">Фамилия:</span>
+                  <input class="field__input field__input--data" type="text" name="second-name" placeholder="Укажите фамилию*">
+                  <span class="visually-hidden">Укажите фамилию*</span>
+                </label>
+              </li>
+              <li class="user-data__item">
+                <label class="field">
+                  <span class="field__label">Отчество:</span>
+                  <input class="field__input field__input--data" type="text" name="first-name" placeholder="Отчество, если желаете">
+                  <span class="visually-hidden">Отчество, если желаете</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="user-data__group">
+          <fieldset class="user-data__fieldset user-data__fieldset--contacts container">
+            <legend class="user-data__legend">тел</legend>
+            <label class="field field--phone">
+              <input class="field__input field__input--tel" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              <span class="visually-hidden">Введите ваш номер телефона</span>
+            </label>
+            <legend class="user-data__legend">e-mail</legend>
+            <label class="field field--email">
+              <input class="field__input field__input--email" type="email" name="email" placeholder="Ваш Email*">
+              <span class="visually-hidden">Введите ваш емайл</span>
+            </label>
+          </fieldset>
+        </div>
+        <div class="user-data__group">
+          <fieldset class="user-data__fieldset user-data__fieldset--message container">
+            <legend class="user-data__legend">доп</legend>
+            <label class="field field--textarea">
+              <span class="visually-hidden">Ваши пожелания</span>
+              <textarea class="field__input" name="message">Опишите все ваши пожелания к заказу</textarea>
+            </label>
+          </fieldset>
+        </div>
         <div class="user-data__footer container">
           <p class="user-data__footnote">*Поля обязательны для заполнения</p>
           <button class="user-data__button button" type="submit">Отправить заказ</button>
