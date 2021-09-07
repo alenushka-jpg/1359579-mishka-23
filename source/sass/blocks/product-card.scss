@@ -8,11 +8,17 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr;
+    grid-template-rows: 462px 1fr;
+    height: 100%;
   }
 }
 
 .product-card__img-link {
   display: block;
+
+  @media (min-width: $desktop-width) {
+    height: min-content;
+  }
 }
 
 .product-card__img {
@@ -44,7 +50,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 197px;
     padding-left: 28px;
     padding-right: 26px;
   }
@@ -75,7 +80,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 12px;
+    margin-bottom: 13px;
   }
 }
 

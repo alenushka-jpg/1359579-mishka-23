@@ -1,16 +1,12 @@
 .field {
   display: block;
 
-  &--phone {
-    margin-bottom: 34px;
-  }
-
   &--textarea {
-    margin-bottom: 17px;
     border-bottom: 0;
 
     .field__input {
       height: 142px;
+      margin-bottom: 17px;
       padding: 17px;
       border: 2px solid $color-gray-500;
       color: rgba($color-black, 0.3);
@@ -49,14 +45,14 @@
     padding-bottom: 17px;
   }
 
-  &--tel {
-    padding-top: 14px;
-    padding-bottom: 20px;
-  }
-
+  &--tel,
   &--email {
     padding-top: 16px;
     padding-bottom: 18px;
+  }
+
+  &--tel {
+    margin-bottom: 34px;
   }
 
   @media (min-width: $tablet-width) {

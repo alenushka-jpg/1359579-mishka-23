@@ -49,7 +49,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    width: 350px;
+    min-width: 350px;
     margin-left: 58px;
     margin-right: 58px;
   }

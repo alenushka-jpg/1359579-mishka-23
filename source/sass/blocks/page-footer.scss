@@ -1,7 +1,10 @@
 .page-footer {
+  background-color: $color-gray-50;
+}
+
+.page-footer__container {
   padding-top: 25px;
   padding-bottom: 23px;
-  background-color: $color-gray-50;
 
   @media (min-width: $tablet-width) {
     display: flex;

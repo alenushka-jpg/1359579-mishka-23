@@ -1,3 +1,15 @@
+.user-data {
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 98px;
+  }
+}
+
 .user-data__intro {
   margin-top: 0;
   margin-bottom: 37px;
@@ -142,6 +154,8 @@
 }
 
 .user-data__button {
+  padding-left: 17px;
+  padding-right: 17px;
   background-color: inherit;
 
   @media (min-width: $desktop-width) {

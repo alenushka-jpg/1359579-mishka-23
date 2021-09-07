@@ -88,6 +88,10 @@
 
 .video-product__button {
   margin-bottom: 37px;
+  margin-left: 34px;
+  margin-right: 34px;
+  padding-left: 11px;
+  padding-right: 11px;
 
   @media (min-width: $tablet-width) {
     order: 3;

@@ -1,45 +1,5 @@
 .intro {
   background-color: $color-gray-50;
-
-  &--catalog {
-    .intro__title {
-      margin-bottom: 30px;
-    }
-  }
-
-  &--form {
-    .intro__title {
-      margin-bottom: 17px;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    &--catalog {
-      .intro__title {
-        margin-bottom: 67px;
-      }
-    }
-
-    &--form {
-      .intro__title {
-        margin-bottom: 54px;
-      }
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--catalog {
-      .intro__title {
-        margin-bottom: 111px;
-      }
-    }
-
-    &--form {
-      .intro__title {
-        margin-bottom: 98px;
-      }
-    }
-  }
 }
 
 .intro__title {
