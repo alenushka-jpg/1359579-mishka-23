@@ -5,14 +5,24 @@
   flex-direction: column;
   justify-content: space-between;
   background-image: url("../img/hero-mobile.png");
+  background-size: 568px 373px;
   background-position: left 50% bottom 140px;
   background-color: $color-gray-150;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 746px;
     background-image: url("../img/hero-tablet.png");
+    background-size: 1150px 746px;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-tablet@2x.png");
+    }
   }
 }
 
@@ -25,6 +35,7 @@
   line-height: 30px;
   text-align: center;
   color: $color-black;
+  white-space: pre-line;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 372px;
