@@ -54,13 +54,15 @@
 }
 
 .promo__link {
-  text-decoration: none;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  min-height: 103px;
   margin: 0 -30px;
   padding-top: 21px;
   padding-left: 30px;
-  padding-right: 160px;
+  padding-right: 30px;
   padding-bottom: 23px;
+  text-decoration: none;
 
   &--accesories {
     background-color: $color-green-200;
@@ -74,17 +76,15 @@
     width: 50%;
     min-height: 119px;
     margin: 0;
-    padding-left: 37px;
+    padding-left: 36px;
+    padding-right: 36px;
     padding-top: 25px;
     padding-bottom: 34px;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   padding-right: 325px;
-  // }
 }
 
 .promo__text {
+  white-space: pre-line;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
