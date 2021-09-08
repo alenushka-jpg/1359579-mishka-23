@@ -1,7 +1,8 @@
 .contacts {
+  display: grid;
+
   @media (min-width: $tablet-width) {
     padding-top: 46px;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-image: url("../img/flag.svg");
     background-position: top 46px right 54px;
@@ -70,6 +71,11 @@
 
 .contacts__item {
   display: flex;
+  margin-bottom: 41px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -109,8 +115,20 @@
 }
 
 .contacts__map {
+  position: relative;
   margin: 0 -30px;
   margin-bottom: 41px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 145px;
+    left: calc(50% - 20px);
+    width: 67px;
+    height: 100px;
+    background-image: url("../img/map-pin.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 -50px;
@@ -125,6 +143,9 @@
 }
 
 .contacts__map-image {
+  margin-left: auto;
+  margin-right: auto;
+
   @media (min-width: $tablet-width) {
     width: 100%;
     height: 457px;
