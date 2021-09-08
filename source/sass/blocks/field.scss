@@ -2,27 +2,68 @@
   display: block;
 
   &--textarea {
+    border-bottom: 0;
+
     .field__input {
+      height: 142px;
+      margin-bottom: 17px;
+      padding: 17px;
+      border: 2px solid $color-gray-500;
+      color: rgba($color-black, 0.3);
       resize: none;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }
 
 .field__label {
   display: block;
-  margin-bottom: 17px;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    margin-right: 25px;
+  }
 }
 
 .field__input {
-  padding: 0;
+  display: block;
+  width: 100%;
   font-size: 17px;
   line-height: 18px;
+  border: none;
+  border-bottom: 2px solid $color-gray-500;
 
   &--data {
-    border: none;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  &--tel,
+  &--email {
+    padding-top: 16px;
+    padding-bottom: 18px;
+  }
+
+  &--tel {
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 18px;
+
+    &--tel,
+    &--email {
+      background-color: $color-gray-50;
+    }
   }
 }

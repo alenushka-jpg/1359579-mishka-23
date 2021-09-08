@@ -1,22 +1,25 @@
 .intro {
   background-color: $color-gray-50;
-
-  &--catalog {
-    .intro__title {
-      margin-bottom: 30px;
-    }
-  }
-
-  &--form {
-    .intro__title {
-      margin-bottom: 17px;
-    }
-  }
 }
 
 .intro__title {
-  margin: 0;
-  padding-top: 81px;
-  padding-bottom: 67px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 73px;
+  padding-bottom: 73px;
   font-size: 27px;
+  text-align: center;
+  color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 101px;
+    padding-bottom: 87px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

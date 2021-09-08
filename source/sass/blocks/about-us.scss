@@ -37,17 +37,48 @@
 
 .about-us__item {
   padding-top: 53px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   color: $color-black;
+  background-repeat: no-repeat;
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 22px;
+  &:nth-child(odd) {
+    order: -1;
   }
 
-  // @media (min-width: $desktop-width) {
+  &--materials {
+    background-image: url("../img/icon-materials.svg");
+  }
 
-  // }
+  &--made {
+    background-image: url("../img/icon-made.svg");
+  }
+
+  &--style {
+    background-image: url("../img/icon-style.svg");
+  }
+
+  &--support {
+    background-image: url("../img/icon-support.svg");
+  }
+
+  &--likes {
+    background-image: url("../img/icon-likes.svg");
+  }
+
+  &--gift {
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 22px;
+
+    &:nth-child(odd) {
+      order: 0;
+    }
+  }
 }

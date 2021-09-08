@@ -33,8 +33,22 @@
 
 .page-header__burger {
   position: absolute;
-  right: 31px;
-  top: 35px;
+  right: 17px;
+  top: 15px;
+  height: 48px;
+  width: 48px;
+  border: none;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+
+  &--closed {
+    background-image: url("../img/menu-closed.svg");
+  }
+
+  &--opened {
+    background-image: url("../img/menu-burger.svg");
+  }
 }
 
 .page-header__navigation {
@@ -62,8 +76,4 @@
     display: block;
     grid-area: delivery;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   grid-column: 6/7;
-  // }
 }

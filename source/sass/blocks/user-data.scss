@@ -1,14 +1,78 @@
+.user-data {
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 98px;
+  }
+}
+
 .user-data__intro {
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 37px;
   font-size: 13px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.user-data__group:nth-child(odd) {
+  @media (min-width: $tablet-width) {
+    background-color: $color-gray-50;
+  }
 }
 
 .user-data__fieldset {
+  display: grid;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   border: none;
-  margin: 0;
-  padding: 0;
+
+  &--type,
+  &--color {
+    padding-bottom: 30px;
+
+    .user-data__legend {
+      margin-bottom: 25px;
+    }
+  }
+
+  &--user {
+    padding-bottom: 34px;
+
+    .user-data__legend {
+      margin-bottom: 29px;
+    }
+  }
+
+  &--contacts {
+    padding-bottom: 34px;
+  }
+
+  &--message {
+    .user-data__legend {
+      margin-bottom: 22px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 3fr;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
 }
 
 .user-data__legend {
@@ -18,24 +82,84 @@
   line-height: 16px;
   color: $color-green-200;
   text-transform: uppercase;
+
+
+  @media (min-width: $tablet-width) {
+    float: left;
+    grid-column: 1/2;
+    margin: 0;
+    padding-top: 16px;
+  }
 }
 
 .user-data__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    &--color {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
+}
+
+.user-data__item {
+  margin-bottom: 21px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .user-data__footer {
+  display: grid;
   margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 230px 1fr;
+    column-gap: 109px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 230px 470px 1fr;
+    column-gap: 0;
+  }
 }
 
 .user-data__footnote {
   margin: 0;
   margin-bottom: 30px;
+  font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
+    align-self: center;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .user-data__button {
+  padding-left: 17px;
+  padding-right: 17px;
   background-color: inherit;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
 }

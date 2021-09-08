@@ -1,9 +1,11 @@
 .button {
   display: inline-block;
   text-decoration: none;
-  width: 100%;
+  min-width: 192px;
   padding: 0;
   padding-top: 14px;
+  padding-left: 26px;
+  padding-right: 26px;
   padding-bottom: 14px;
   font-family: inherit;
   font-weight: 700;

@@ -1,7 +1,29 @@
+.product-list {
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 111px;
+  }
+}
+
 .product-list__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 316px);
+    column-gap: 51px;
+  }
 }
 
 .product-list__item {

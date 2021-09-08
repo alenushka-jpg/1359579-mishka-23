@@ -1,10 +1,8 @@
 .featured {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   padding-top: 31px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding-top: 52px;
     padding-bottom: 52px;
@@ -116,13 +114,13 @@
 }
 
 .featured__image-wrapper {
-  grid-column: 3/5;
-  grid-row: 2/4;
   margin: 0 auto;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    grid-column: 3/5;
+    grid-row: 2/4;
   }
 
   @media (min-width: $desktop-width) {
@@ -174,6 +172,7 @@
 }
 
 .featured__button {
+  width: 100%;
   margin-bottom: 73px;
 
   @media (min-width: $tablet-width) {
