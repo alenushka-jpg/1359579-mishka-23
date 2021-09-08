@@ -3,6 +3,9 @@
     padding-top: 46px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    background-image: url("../img/flag.svg");
+    background-position: top 46px right 54px;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
@@ -10,6 +13,7 @@
     column-gap: 56px;
     padding-top: 71px;
     padding-bottom: 105px;
+    background-position: top 132px left 113px;
   }
 }
 
