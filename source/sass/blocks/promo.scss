@@ -75,12 +75,36 @@
   padding-bottom: 23px;
   text-decoration: none;
 
+  &:hover {
+    .promo__text {
+      position: relative;
+      top: -5px;
+    }
+
+    background-color: $color-green-350;
+  }
+
   &--accesories {
     background-color: $color-green-200;
+
+    &:active,
+    &:focus {
+      background-color: $color-green-350;
+    }
   }
 
   &--toys {
     background-color: $color-green-300;
+
+    &:hover {
+      min-height: 124px;
+      background-color: $color-green-450;
+    }
+
+    &:active,
+    &:focus {
+      background-color: $color-green-450;
+    }
   }
 
   @media (min-width: $tablet-width) {

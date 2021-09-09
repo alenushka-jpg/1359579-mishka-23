@@ -40,7 +40,8 @@
     opacity: 0.6;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     opacity: 0.3;
   }
 
