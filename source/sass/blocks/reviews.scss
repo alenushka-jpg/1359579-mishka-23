@@ -6,7 +6,12 @@
     padding-top: 82px;
     padding-bottom: 47px;
     background-image: url("../img/carpet.png");
+    background-size: 350px 457px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/carpet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
