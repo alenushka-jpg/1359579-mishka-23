@@ -25,6 +25,11 @@
   font-size: 17px;
   line-height: 24px;
   color: $color-black;
+  background-image: url("../img/video.svg");
+  background-size: 32px 22px;
+  background-repeat: no-repeat;
+  background-position: left 34px bottom 39px;
+  white-space: pre-line;
 
   @media (min-width: $tablet-width) {
     padding-left: 107px;
@@ -43,7 +48,18 @@
   }
 }
 
+.video-product__link {
+  position: relative;
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/3;
+  }
+}
+
 .video-product__img {
+  display: block;
+  width: 100%;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -52,10 +68,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-row: 1/3;
     margin: 0;
     width: 682px;
   }
+}
+
+.video-product__svg {
+  position: absolute;
+  left: 35%;
+  bottom: 30%;
 }
 
 .video-product__description {
