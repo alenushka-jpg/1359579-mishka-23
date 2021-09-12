@@ -1,6 +1,7 @@
 .size-list {
   display: flex;
   justify-content: space-between;
+  column-gap: 7px;
   margin-top: 0;
   margin-bottom: 31px;
   padding: 0;
@@ -14,12 +15,45 @@
 }
 
 .size-list__item {
-  padding: 9px 10px;
-  border: 2px solid rgba($color-gray-500, 0.1);
+  width: 82px;
+  height: 52px;
+}
+
+.size-list__radio {
+  position: relative;
+  width: 82px;
+  height: 52px;
+}
+
+.size-list__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 82px;
+  height: 52px;
+  margin: 0;
+  opacity: 0;
 }
 
 .size-list__label {
+  display: block;
+  text-align: center;
+  padding: 18px 30px;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 82px;
+    height: 52px;
+    border: 2px solid rgba($color-gray-500, 0.1);
+  }
+}
+
+.size-list__input:checked + .size-list__label::after {
+  border: 2px solid $color-green-200;
 }

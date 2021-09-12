@@ -48,7 +48,7 @@
 }
 
 .checkbox__input:checked + .checkbox__label::after {
-  background-image: url(../img/tick.svg);
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: 50%;
 }
