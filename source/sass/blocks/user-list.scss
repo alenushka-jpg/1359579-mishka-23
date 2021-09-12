@@ -26,6 +26,7 @@
 
 .user-list__link {
   display: block;
+  position: relative;
   padding-top: 23px;
   padding-bottom: 26px;
   padding-right: 25px;
@@ -46,7 +47,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    position: relative;
     padding-top: 33px;
     padding-left: 32px;
     padding-right: 0;
@@ -67,9 +67,13 @@
 }
 
 .user-list__svg {
+  position: absolute;
+  left: 32px;
+  top: 25px;
+
   @media (min-width: $tablet-width) {
-    position: absolute;
     left: 30px;
+    top: 35px;
   }
 }
 
