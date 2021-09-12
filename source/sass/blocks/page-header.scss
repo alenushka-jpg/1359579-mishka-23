@@ -1,4 +1,11 @@
 .page-header {
+  &--opened {
+    .page-header__navigation,
+    .page-header__user-list {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     display: grid;

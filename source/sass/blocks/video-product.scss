@@ -37,6 +37,8 @@
     padding-top: 41px;
     padding-bottom: 0;
     font-size: 20px;
+    background-position: left 45px bottom 3px;
+    white-space: normal;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,6 +47,7 @@
     grid-column: 2/3;
     grid-row: 1/2;
     padding-right: 62px;
+    background-position: left 65px bottom 80px;
   }
 }
 
@@ -75,8 +78,8 @@
 
 .video-product__svg {
   position: absolute;
-  left: 35%;
-  bottom: 30%;
+  left: calc(50% - 50px);
+  bottom: calc(50% - 38px);
 }
 
 .video-product__description {
