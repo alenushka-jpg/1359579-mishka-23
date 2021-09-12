@@ -34,6 +34,18 @@
     background-color: $color-green-400;
     border-radius: 50%;
   }
+
+  &:hover {
+    &::after {
+      border-color: $color-green-400;
+    }
+  }
+
+  &:active {
+    &::after {
+      border-color: rgba($color-black, 0.3);
+    }
+  }
 }
 
 .radio-button__input {
