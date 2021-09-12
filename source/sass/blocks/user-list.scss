@@ -46,14 +46,18 @@
   }
 
   @media (min-width: $tablet-width) {
+    position: relative;
     padding-top: 33px;
     padding-left: 32px;
     padding-right: 0;
     padding-bottom: 32px;
 
     &--search {
-      position: relative;
       min-width: 83px;
+    }
+
+    &--basket {
+      padding-left: 83px;
     }
   }
 
@@ -62,7 +66,7 @@
   }
 }
 
-.user-list__svg-search {
+.user-list__svg {
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 30px;

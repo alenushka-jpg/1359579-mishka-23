@@ -1,5 +1,6 @@
 .page-header {
   @media (min-width: $tablet-width) {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 83px 265px;
     grid-template-areas:
@@ -7,6 +8,9 @@
       "navigation navigation delivery";
     padding-left: 50px;
     padding-right: 50px;
+
+    margin-bottom: -64px;
+    z-index: 5;
   }
 
   @media (min-width: $desktop-width) {
