@@ -1,5 +1,6 @@
 .contacts {
   display: grid;
+  padding-top: 38px;
 
   @media (min-width: $tablet-width) {
     padding-top: 46px;
@@ -71,7 +72,7 @@
 
 .contacts__item {
   display: flex;
-  margin-bottom: 41px;
+  margin-bottom: 33px;
 
   &:last-child {
     margin-bottom: 0;
