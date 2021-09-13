@@ -9,7 +9,7 @@
     width: 100%;
     height: 6px;
     background-image: url("../img/zigzag-line.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
   }
 
   @media (min-width: $tablet-width) {
@@ -17,10 +17,15 @@
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 38px;
     padding-top: 82px;
-    padding-bottom: 47px;
+    padding-bottom: 85px;
     background-image: url("../img/carpet.png");
     background-size: 350px 457px;
     background-repeat: no-repeat;
+
+    &::after {
+      height: 17px;
+      background-image: url(../img/zigzag-line-tablet.svg);
+    }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/carpet@2x.png");
@@ -30,6 +35,11 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(6, 1fr);
     background-position: left 50px top;
+
+    &::after {
+      height: 23px;
+      background-image: url(../img/zigzag-line-desktop.svg);
+    }
   }
 }
 
@@ -48,6 +58,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/5;
     grid-row: 2/3;
+    margin-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
@@ -118,7 +129,6 @@
     margin-bottom: 0;
   }
 }
-
 
 .reviews__author {
   display: block;
@@ -196,12 +206,13 @@
   @media (min-width: $tablet-width) {
     grid-column: 3/5;
     grid-row: 1/2;
-    width: 175px;
+    width: inherit;
+    min-width: 175px;
     margin-bottom: 0;
     margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 5/7;
+    grid-column: 6/7;
   }
 }
