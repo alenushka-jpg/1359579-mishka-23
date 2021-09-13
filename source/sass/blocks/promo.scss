@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 746px;
+    min-height: 758px;
     background-image: url("../img/hero-tablet.png");
     background-size: 1150px 746px;
     background-position: center;
@@ -35,13 +35,14 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-tablet@2x.png");
     }
+  }
 
-    @media (min-width: $desktop-width) {
-      &::after {
-        bottom: -2px;
-        height: 34px;
-        background-image: url("../img/zigzag-fill-desktop.svg");
-      }
+  @media (min-width: $desktop-width) {
+    min-height: 763px;
+
+    &::after {
+      height: 34px;
+      background-image: url("../img/zigzag-fill-desktop.svg");
     }
   }
 }
@@ -95,9 +96,9 @@
   text-decoration: none;
 
   &:hover {
-    .promo__text {
+    .promo__type {
       position: relative;
-      top: -5px;
+      transform: translate(0, 5px);
     }
 
     background-color: $color-green-350;
@@ -128,16 +129,17 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    min-height: 119px;
+    min-height: 131px;
     margin: 0;
     padding-left: 36px;
     padding-right: 36px;
     padding-top: 25px;
-    padding-bottom: 34px;
+    padding-bottom: 42px;
   }
 }
 
 .promo__text {
+  width: 140px;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;

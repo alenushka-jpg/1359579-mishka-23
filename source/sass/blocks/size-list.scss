@@ -25,22 +25,19 @@
 
 .size-list__radio {
   position: relative;
-  // width: 82px;
-  // height: 52px;
 }
 
 .size-list__input {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 82px;
-  height: 52px;
-  margin: 0;
-  opacity: 0;
-
-  @media (min-width: $tablet-width) {
-    width: 112px;
-  }
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .size-list__label {
@@ -67,6 +64,14 @@
     &::after {
       width: 112px;
     }
+  }
+}
+
+.ize-list__input:focus + .size-list__label {
+  outline: 2px solid $color-black;
+
+  &::after {
+    border-color: $color-green-400;
   }
 }
 
