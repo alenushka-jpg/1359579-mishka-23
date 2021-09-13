@@ -1,5 +1,6 @@
 .checkbox {
   position: relative;
+  display: block;
 }
 
 .checkbox__label {
@@ -48,6 +49,8 @@
 
 .checkbox__input {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 38px;
   height: 38px;
   margin: 0;

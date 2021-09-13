@@ -15,7 +15,7 @@
     column-gap: 56px;
     padding-top: 71px;
     padding-bottom: 105px;
-    background-position: top 132px left 113px;
+    background-position: 113px 132px;
   }
 }
 
@@ -116,20 +116,8 @@
 }
 
 .contacts__map {
-  position: relative;
   margin: 0 -30px;
   margin-bottom: 41px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 145px;
-    left: calc(50% - 20px);
-    width: 67px;
-    height: 100px;
-    background-image: url("../img/map-pin.svg");
-    background-repeat: no-repeat;
-  }
 
   @media (min-width: $tablet-width) {
     margin: 0 -50px;

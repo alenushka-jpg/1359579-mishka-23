@@ -81,13 +81,23 @@
 }
 
 .user-data__legend {
+  display: flex;
+  align-items: center;
   padding: 0;
+  width: 100%;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: $color-green-200;
   text-transform: uppercase;
 
+  &::after {
+    content: "";
+    width: 100%;
+    margin-left: 20px;
+    height: 1px;
+    background-color: #62d1ba;
+  }
 
   @media (min-width: $tablet-width) {
     float: left;
@@ -103,8 +113,7 @@
   padding: 0;
   list-style: none;
 
-  &--color,
-  &--type {
+  &--color {
     row-gap: 23px;
   }
 
