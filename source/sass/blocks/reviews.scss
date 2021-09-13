@@ -24,7 +24,7 @@
 
     &::after {
       height: 17px;
-      background-image: url(../img/zigzag-line-tablet.svg);
+      background-image: url("../img/zigzag-line-tablet.svg");
     }
 
     @media (min-resolution: 2dppx) {
@@ -38,7 +38,7 @@
 
     &::after {
       height: 23px;
-      background-image: url(../img/zigzag-line-desktop.svg);
+      background-image: url("../img/zigzag-line-desktop.svg");
     }
   }
 }
