@@ -136,6 +136,10 @@
     padding-top: 25px;
     padding-bottom: 42px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 136px;
+  }
 }
 
 .promo__text {
