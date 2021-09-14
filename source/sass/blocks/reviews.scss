@@ -193,6 +193,14 @@
     background-image: url("../img/huge-arrow-right.svg");
   }
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: 50px;
     height: 26px;
