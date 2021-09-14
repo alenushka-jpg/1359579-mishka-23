@@ -59,6 +59,14 @@
   display: block;
   margin-bottom: 6px;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product-card__title {

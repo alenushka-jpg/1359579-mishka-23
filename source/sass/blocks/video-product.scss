@@ -3,6 +3,14 @@
   margin-bottom: 54px;
   border: 1px solid $color-gray-100;
 
+  &:hover {
+    box-shadow: 0 6px 10px rgba($color-black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($color-black, 0.1);
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     margin-bottom: 64px;
