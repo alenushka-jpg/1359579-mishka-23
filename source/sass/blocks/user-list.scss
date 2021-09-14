@@ -26,6 +26,7 @@
 
 .user-list__link {
   display: block;
+  position: relative;
   padding-top: 23px;
   padding-bottom: 26px;
   padding-right: 25px;
@@ -36,6 +37,14 @@
   color: $color-black;
   text-decoration: none;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 33px;
     padding-left: 32px;
@@ -43,8 +52,13 @@
     padding-bottom: 32px;
 
     &--search {
-      position: relative;
       min-width: 83px;
+      border-left: 1px solid $color-gray-200;
+      border-right: 1px solid $color-gray-200;
+    }
+
+    &--basket {
+      padding-left: 83px;
     }
   }
 
@@ -53,10 +67,15 @@
   }
 }
 
-.user-list__svg-search {
+.user-list__svg {
+  position: absolute;
+  left: 32px;
+  top: 25px;
+  opacity: 0.2;
+
   @media (min-width: $tablet-width) {
-    position: absolute;
     left: 30px;
+    top: 35px;
   }
 }
 

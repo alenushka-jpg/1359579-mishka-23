@@ -15,4 +15,13 @@
   text-align: center;
   border: 2px solid $color-gray-500;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $color-gray-500;
+    color: $color-white;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+  }
 }

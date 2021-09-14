@@ -21,11 +21,19 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, 316px);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 51px;
   }
 }
 
 .product-list__item {
   margin-bottom: 30px;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba($color-black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($color-black, 0.1);
+  }
 }

@@ -12,6 +12,11 @@
       color: rgba($color-black, 0.3);
       resize: none;
     }
+
+    .field__input:hover,
+    .field__input:active {
+      border: 2px solid $color-green-400;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -53,6 +58,11 @@
 
   &--tel {
     margin-bottom: 34px;
+  }
+
+  &:hover,
+  &:active {
+    border-bottom: 2px solid $color-green-400;
   }
 
   @media (min-width: $tablet-width) {

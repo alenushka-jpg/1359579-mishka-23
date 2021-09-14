@@ -1,5 +1,18 @@
 .logo {
   display: block;
+
+  &:focus,
+  &:hover {
+    .logo__img {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    .logo__img {
+      opacity: 0.3;
+    }
+  }
 }
 
 .logo__img {
@@ -19,6 +32,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 136px;
+    height: 65px;
     margin: 0 auto;
   }
 }

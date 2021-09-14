@@ -1,8 +1,13 @@
 .contacts {
+  display: grid;
+  padding-top: 38px;
+
   @media (min-width: $tablet-width) {
     padding-top: 46px;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
+    background-image: url("../img/flag.svg");
+    background-position: top 46px right 54px;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
@@ -10,6 +15,7 @@
     column-gap: 56px;
     padding-top: 71px;
     padding-bottom: 105px;
+    background-position: 113px 132px;
   }
 }
 
@@ -66,13 +72,24 @@
 
 .contacts__item {
   display: flex;
+  margin-bottom: 33px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    padding-right: 50px;
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
+    padding-right: 25px;
     margin-bottom: 34px;
   }
 }
@@ -93,14 +110,29 @@
 }
 
 .contacts__description {
+  position: relative;
   margin: 0;
 
-  @media (min-width: $tablet-width) {
-    padding-right: 50px;
+  &--email {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #62d1ba;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    padding-right: 25px;
+  &:hover {
+    color: $color-green-450;
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.1;
+    }
   }
 }
 
@@ -121,15 +153,12 @@
 }
 
 .contacts__map-image {
+  display: block;
+  width: 100%;
+
   @media (min-width: $tablet-width) {
-    width: 100%;
     height: 457px;
     object-fit: cover;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 457px;
-    width: 100%;
   }
 }
 
