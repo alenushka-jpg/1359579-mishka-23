@@ -40,6 +40,10 @@
 
 .page-header__logo {
   padding: 22px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 0;
+  }
 }
 
 .page-header__burger {

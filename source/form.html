@@ -10,7 +10,11 @@
     <header class="page-header">
       <div class="page-header__top">
         <a class="page-header__logo logo" href="index.html">
-          <img class="logo__img" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина мягких игрушек: Мишка">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+            <img class="logo__img" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина мягких игрушек: Мишка">
+          </picture>
         </a>
         <button class="page-header__burger page-header__burger--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
