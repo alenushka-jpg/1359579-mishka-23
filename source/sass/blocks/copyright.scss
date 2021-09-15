@@ -19,3 +19,15 @@
   line-height: 18px;
   color: $color-black;
 }
+
+.copyright__logo {
+  fill: $color-black;
+
+  &:hover {
+    fill: $color-green-450;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

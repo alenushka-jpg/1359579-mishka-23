@@ -25,6 +25,7 @@
 
 .size-list__radio {
   position: relative;
+  display: block;
 }
 
 .size-list__input {
@@ -56,6 +57,18 @@
     width: 82px;
     height: 52px;
     border: 2px solid rgba($color-gray-500, 0.1);
+  }
+
+  &:hover {
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &:active {
+    &::after {
+      border: 2px solid $color-green-400;
+    }
   }
 
   @media (min-width: $tablet-width) {

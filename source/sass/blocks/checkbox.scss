@@ -64,6 +64,7 @@
 
 .checkbox__input:focus + .checkbox__label {
   outline: 2px solid $color-black;
+  outline-offset: 2px;
 
   &::after {
     border-color: $color-green-400;

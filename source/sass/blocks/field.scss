@@ -15,7 +15,7 @@
 
     .field__input:hover,
     .field__input:active {
-      border: 2px solid $color-green-400;
+      box-shadow: inset 0 0 0 2px $color-green-200;
     }
   }
 
@@ -62,7 +62,7 @@
 
   &:hover,
   &:active {
-    border-bottom: 2px solid $color-green-400;
+    box-shadow: inset 0 -2px 0 0 $color-green-200;
   }
 
   @media (min-width: $tablet-width) {
