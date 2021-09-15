@@ -86,6 +86,16 @@
   position: absolute;
   left: calc(50% - 50px);
   bottom: calc(50% - 38px);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .video-product__description {
