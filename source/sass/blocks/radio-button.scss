@@ -1,5 +1,6 @@
 .radio-button {
   position: relative;
+  display: block;
 }
 
 .radio-button__label {
@@ -63,6 +64,7 @@
 
 .radio-button__input:focus + .radio-button__label {
   outline: 2px solid $color-black;
+  outline-offset: 2px;
 
   &::after {
     border-color: $color-green-400;

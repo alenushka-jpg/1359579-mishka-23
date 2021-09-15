@@ -85,6 +85,7 @@
 }
 
 .promo__link {
+  position: relative;
   display: flex;
   justify-content: space-between;
   min-height: 103px;
@@ -101,6 +102,7 @@
 
     &::after {
       content: "";
+      position: absolute;
       height: 62px;
       width: 40px;
       background-image: url("../img/accesories.svg");
@@ -113,6 +115,7 @@
 
     &::after {
       content: "";
+      position: absolute;
       height: 60px;
       width: 60px;
       background-image: url("../img/toys.svg");
@@ -133,7 +136,8 @@
     }
 
     &::after {
-      opacity: 0.7;
+      fill: rgba($color-green-500, 0.7);
+      top: calc(50% - 35px);
     }
   }
 
@@ -145,7 +149,7 @@
     }
 
     &::after {
-      opacity: 0.3;
+      fill: rgba($color-green-500, 0.3);
     }
   }
 

@@ -113,6 +113,7 @@
 
 .user-data__list {
   display: grid;
+  row-gap: 22px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -154,7 +155,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 230px 470px 1fr;
+    grid-template-columns: 1fr 230px 405px 1fr;
     column-gap: 0;
   }
 }

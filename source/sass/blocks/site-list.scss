@@ -43,9 +43,13 @@
   @media (min-width: $desktop-width) {
     padding-top: 33px;
     padding-bottom: 32px;
-    padding-right: 40px;
+    padding-right: 36px;
     font-size: 17px;
     line-height: 24px;
     z-index: -1;
+
+    &:not(:first-child) {
+      padding-left: 36px;
+    }
   }
 }
