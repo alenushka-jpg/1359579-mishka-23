@@ -27,25 +27,16 @@
 
 .social__link {
   display: block;
+}
 
-  background-repeat: no-repeat;
-  background-position: center;
+.social__icon {
+  fill: $color-black;
 
-  &--instagram {
-    width: 22px;
-    height: 21px;
-    background-image: url("../img/instagram.svg");
+  &:hover {
+    fill: $color-green-450;
   }
 
-  &--facebook {
-    width: 15px;
-    height: 28px;
-    background-image: url("../img/facebook.svg");
-  }
-
-  &--twitter {
-    width: 23px;
-    height: 20px;
-    background-image: url("../img/twitter.svg");
+  &:active {
+    opacity: 0.3;
   }
 }
