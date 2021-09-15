@@ -58,6 +58,18 @@
     border: 2px solid rgba($color-gray-500, 0.1);
   }
 
+  &:hover {
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &:active {
+    &::after {
+      border: 2px solid $color-green-400;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 18px 40px;
 
