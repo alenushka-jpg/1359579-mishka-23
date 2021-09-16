@@ -139,7 +139,6 @@
         </div>
         <div class="user-data__group">
           <fieldset class="user-data__fieldset user-data__fieldset--user container">
-            <h2 class="visually-hidden">Введите ваше фио</h2>
             <legend class="user-data__legend">фио</legend>
             <ul class="user-data__list user-data__list--user">
               <li class="user-data__item">
@@ -168,14 +167,15 @@
         </div>
         <div class="user-data__group">
           <fieldset class="user-data__fieldset user-data__fieldset--contacts container">
-            <legend class="user-data__legend">тел</legend>
+            <legend class="visually-hidden">Контактная информация магазина</legend>
             <label class="field field--phone">
               <input class="field__input field__input--tel" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              <span class="field__contacts">тел</span>
               <span class="visually-hidden">Введите ваш номер телефона</span>
             </label>
-            <legend class="user-data__legend">e-mail</legend>
             <label class="field field--email">
               <input class="field__input field__input--email" type="email" name="email" placeholder="Ваш Email*">
+              <span class="field__contacts">e-mail</span>
               <span class="visually-hidden">Введите ваш емайл</span>
             </label>
           </fieldset>
@@ -198,9 +198,7 @@
     <footer class="page-footer">
       <div class="page-footer__container container">
         <a class="page-footer__logo logo">
-          <a class="page-footer__logo logo">
-            <img src="img/logo-footer.svg" alt="">
-          </a>
+          <img src="img/logo-footer.svg" alt="">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
