@@ -18,8 +18,10 @@
     grid-row-gap: 38px;
     padding-top: 82px;
     padding-bottom: 85px;
-    background: linear-gradient($color-gray-200, $color-gray-200) 0% /350px 457px;
-    background-image: url("../img/carpet.png");
+    background-image:
+      url("../img/carpet.png"),
+      linear-gradient($color-gray-200, $color-gray-200);
+    background-position: 0%;
     background-size: 350px 457px;
     background-repeat: no-repeat;
 
@@ -29,7 +31,9 @@
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/carpet@2x.png");
+      background-image:
+        url("../img/carpet@2x.png"),
+        linear-gradient($color-gray-200, $color-gray-200);
     }
   }
 
