@@ -155,10 +155,10 @@
 .contacts__map-image {
   display: block;
   width: 100%;
+  border: 0;
 
   @media (min-width: $tablet-width) {
     height: 457px;
-    object-fit: cover;
   }
 }
 
