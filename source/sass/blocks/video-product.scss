@@ -87,8 +87,7 @@
   left: calc(50% - 50px);
   bottom: calc(50% - 38px);
 
-  &:hover,
-  &:focus {
+  &:hover {
     transform: scale(1.2);
   }
 
@@ -127,11 +126,16 @@
 }
 
 .video-product__button {
+  display: block;
   margin-bottom: 37px;
   margin-left: 34px;
   margin-right: 34px;
   padding-left: 11px;
   padding-right: 11px;
+
+  &:focus {
+    outline: 2px solid $color-black;
+  }
 
   @media (min-width: $tablet-width) {
     order: 3;
