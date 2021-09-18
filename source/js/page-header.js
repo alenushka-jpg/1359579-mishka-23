@@ -12,7 +12,7 @@ burger.addEventListener('click', function() {
   } else {
     pageHeader.classList.add('page-header--closed');
     pageHeader.classList.remove('page-header--opened');
-    burger.classList.add('page-header__burger--opened');
-    burger.classList.remove('page-header__burger--closed');
+    burger.classList.add('page-header__burger--closed');
+    burger.classList.remove('page-header__burger--opened');
   }
 });
