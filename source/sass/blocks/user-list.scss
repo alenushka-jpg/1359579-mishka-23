@@ -38,11 +38,18 @@
   text-decoration: none;
 
   &:hover {
-    opacity: 0.6;
+    color: rgba($color-black, 0.6);
+
+    .user-list__svg {
+      opacity: 1;
+      color: $color-green-200;
+    }
   }
 
   &:active {
-    opacity: 0.3;
+    .user-list__svg {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -55,6 +62,10 @@
       min-width: 83px;
       border-left: 1px solid $color-gray-200;
       border-right: 1px solid $color-gray-200;
+
+      .user-list__svg {
+        left: 32px;
+      }
     }
 
     &--basket {
@@ -76,6 +87,10 @@
   @media (min-width: $tablet-width) {
     left: 30px;
     top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 25px;
   }
 }
 

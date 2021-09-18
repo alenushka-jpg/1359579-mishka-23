@@ -39,8 +39,10 @@
 }
 
 .logo__footer {
+  color: $color-black;
+
   &:hover {
-    fill: $color-green-450;
+    color: $color-green-450;
   }
 
   &:active {

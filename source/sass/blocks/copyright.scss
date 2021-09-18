@@ -4,6 +4,18 @@
   margin-top: 22px;
   text-decoration: none;
 
+  &:hover {
+    .copyright__logo {
+      fill: $color-green-450;
+    }
+  }
+
+  &:active {
+    .copyright__logo {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 0;
   }
@@ -21,13 +33,5 @@
 }
 
 .copyright__logo {
-  fill: $color-black;
-
-  &:hover {
-    fill: $color-green-450;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+  fill: $color-green-200;
 }

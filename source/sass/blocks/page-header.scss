@@ -58,11 +58,11 @@
   background-repeat: no-repeat;
 
   &--closed {
-    background-image: url("../img/menu-closed.svg");
+    background-image: url("../img/icons/menu-closed.svg");
   }
 
   &--opened {
-    background-image: url("../img/menu-burger.svg");
+    background-image: url("../img/icons/menu-burger.svg");
   }
 }
 

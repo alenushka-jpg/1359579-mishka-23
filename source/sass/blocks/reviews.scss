@@ -18,7 +18,9 @@
     grid-row-gap: 38px;
     padding-top: 82px;
     padding-bottom: 85px;
-    background-image: url("../img/carpet.png");
+    background-image:
+      url("../img/carpet.png"),
+      linear-gradient($color-gray-200, $color-gray-200);
     background-size: 350px 457px;
     background-repeat: no-repeat;
 
@@ -28,7 +30,9 @@
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/carpet@2x.png");
+      background-image:
+        url("../img/carpet@2x.png"),
+        linear-gradient($color-gray-200, $color-gray-200);
     }
   }
 
@@ -186,11 +190,11 @@
   }
 
   &--prev {
-    background-image: url("../img/huge-arrow-left.svg");
+    background-image: url("../img/icons/huge-arrow-left.svg");
   }
 
   &--next {
-    background-image: url("../img/huge-arrow-right.svg");
+    background-image: url("../img/icons/huge-arrow-right.svg");
   }
 
   &:hover {
@@ -210,6 +214,7 @@
 .reviews__button {
   width: 100%;
   margin-bottom: 45px;
+  background-color: inherit;
 
   @media (min-width: $tablet-width) {
     grid-column: 3/5;

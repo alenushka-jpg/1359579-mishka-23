@@ -11,13 +11,29 @@
     border: none;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 185px;
+
+    &:nth-child(even) {
+      .site-list__link {
+        padding-right: 0;
+        padding-left: 20px;
+        text-align: end;
+      }
+    }
+
+    &:first-child {
+      border-right: 1px solid $color-gray-200;
+    }
+  }
 }
 
 .site-list__link {
   display: block;
   padding-top: 23px;
   padding-bottom: 26px;
-  padding-right: 25px;
+  padding-right: 37px;
   padding-left: 76px;
   text-decoration: none;
   font-weight: 700;
@@ -47,9 +63,5 @@
     font-size: 17px;
     line-height: 24px;
     z-index: -1;
-
-    &:not(:first-child) {
-      padding-left: 36px;
-    }
   }
 }

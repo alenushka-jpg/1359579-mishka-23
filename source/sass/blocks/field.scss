@@ -1,5 +1,6 @@
 .field {
-  display: block;
+  position: relative;
+  display: grid;
 
   &--textarea {
     border-bottom: 0;
@@ -20,7 +21,21 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    grid-column: 1/4;
+    grid-template-columns: 1fr 3fr;
+
+    &--textarea {
+      grid-column: 2/4;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/3;
+
+    &--textarea {
+      grid-column: 2/3;
+    }
   }
 }
 
@@ -38,6 +53,7 @@
 }
 
 .field__input {
+  order: 1;
   display: block;
   width: 100%;
   font-size: 17px;
@@ -56,10 +72,6 @@
     padding-bottom: 18px;
   }
 
-  &--tel {
-    margin-bottom: 34px;
-  }
-
   &:hover,
   &:active {
     box-shadow: inset 0 -2px 0 0 $color-green-200;
@@ -75,5 +87,47 @@
     &--email {
       background-color: $color-gray-50;
     }
+  }
+}
+
+.field__contacts {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  order: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-green-200;
+
+  &::after {
+    flex-grow: 1;
+    flex-basis: 0%;
+    content: "";
+    width: 100%;
+    margin-left: 20px;
+    height: 1px;
+    background-color: #62d1ba;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      flex-grow: 0;
+    }
+  }
+}
+
+.field__svg {
+  position: absolute;
+  right: 5px;
+  bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    right: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 5px;
   }
 }
