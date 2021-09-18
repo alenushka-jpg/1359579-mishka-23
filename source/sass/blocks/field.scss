@@ -1,4 +1,5 @@
 .field {
+  position: relative;
   display: grid;
 
   &--textarea {
@@ -114,5 +115,19 @@
     &::after {
       flex-grow: 0;
     }
+  }
+}
+
+.field__svg {
+  position: absolute;
+  right: 5px;
+  bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    right: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 5px;
   }
 }

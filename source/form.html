@@ -170,15 +170,21 @@
         <div class="user-data__group">
           <fieldset class="user-data__fieldset user-data__fieldset--contacts container">
             <legend class="visually-hidden">Контактная информация магазина</legend>
-            <label class="field field--phone">
+            <label class="field field--contacts">
               <input class="field__input field__input--tel" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
               <span class="field__contacts">тел</span>
               <span class="visually-hidden">Введите ваш номер телефона</span>
+              <svg class="field__svg" width="25" height="24" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
             </label>
-            <label class="field field--email">
+            <label class="field field--contacts">
               <input class="field__input field__input--email" type="email" name="email" placeholder="Ваш Email*">
               <span class="field__contacts">e-mail</span>
               <span class="visually-hidden">Введите ваш емайл</span>
+              <svg class="field__svg" width="32" height="21" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
             </label>
           </fieldset>
         </div>
