@@ -28,7 +28,7 @@
       bottom: 0;
       width: 100%;
       height: 24px;
-      background-image: url("../img/icons/zigzag-fill.svg");
+      background-image: url("../img/zigzag-fill.svg");
       background-position: center;
       background-repeat: repeat-x;
     }
@@ -43,7 +43,7 @@
 
     &::after {
       height: 34px;
-      background-image: url("../img/icons/zigzag-fill-desktop.svg");
+      background-image: url("../img/zigzag-fill-desktop.svg");
     }
   }
 }
