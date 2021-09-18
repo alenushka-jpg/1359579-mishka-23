@@ -87,6 +87,10 @@
     left: 30px;
     top: 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 25px;
+  }
 }
 
 .user-list__search {
