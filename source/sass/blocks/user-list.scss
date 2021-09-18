@@ -47,7 +47,9 @@
   }
 
   &:active {
-    opacity: 0.3;
+    .user-list__svg {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -60,11 +62,6 @@
       min-width: 83px;
       border-left: 1px solid $color-gray-200;
       border-right: 1px solid $color-gray-200;
-
-      &:hover {
-        border-left: 1px solid rgba($color-black, 0.6);
-        border-right: 1px solid rgba($color-black, 0.6);
-      }
     }
 
     &--basket {
