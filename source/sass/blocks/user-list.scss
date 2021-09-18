@@ -38,7 +38,12 @@
   text-decoration: none;
 
   &:hover {
-    opacity: 0.6;
+    color: rgba($color-black, 0.6);
+
+    .user-list__svg {
+      opacity: 1;
+      color: $color-green-200;
+    }
   }
 
   &:active {
@@ -55,6 +60,11 @@
       min-width: 83px;
       border-left: 1px solid $color-gray-200;
       border-right: 1px solid $color-gray-200;
+
+      &:hover {
+        border-left: 1px solid rgba($color-black, 0.6);
+        border-right: 1px solid rgba($color-black, 0.6);
+      }
     }
 
     &--basket {
