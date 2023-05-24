@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
-    <header class="page-header page-header--nojs">
+    <header class="page-header page-header--nojs" id="#menu">
       <div class="page-header__top">
         <a class="page-header__logo logo">
           <picture>
@@ -72,7 +72,7 @@
       </ul>
       <span class="page-header__delivery">Free delivery within Russia</span>
     </header>
-    <main class="page__main">
+    <main class="page__main" id="#content">
       <section class="promo">
         <h1 class="promo__title container">Cute handmade things for the home.</h1>
         <div class="promo__type container">
@@ -280,6 +280,6 @@
       </ul>
       <button class="modal-window__button button" type="button">Добавить</button>
     </section>
-    <script src="./js/page-header.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
