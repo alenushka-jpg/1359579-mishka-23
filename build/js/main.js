@@ -1,0 +1,1 @@
+import{gsap}from"/node_modules/gsap/gsap-core.js";gsap.from(".page-header__top",{opacity:0,delay:1,y:30});const pageHeader=document.querySelector(".page-header"),burger=document.querySelector(".page-header__burger");function showHeader(){pageHeader.classList.toggle("page-header--open")}pageHeader.classList.remove("page-header--nojs"),burger.addEventListener("click",showHeader);

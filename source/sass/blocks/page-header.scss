@@ -1,8 +1,13 @@
 .page-header {
-  &--closed {
+  .page-header__navigation,
+  .page-header__user-list {
+    display: none;
+  }
+
+  &--open {
     .page-header__navigation,
     .page-header__user-list {
-      display: none;
+      display: block;
     }
   }
 
@@ -18,6 +23,14 @@
 
     margin-bottom: -64px;
     z-index: 5;
+
+    .page-header__navigation {
+      display: block;
+    }
+
+    .page-header__user-list {
+      display: flex;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -56,12 +69,13 @@
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
+  background-image: url("../img/icons/menu-closed.svg");
 
-  &--closed {
+  &--close {
     background-image: url("../img/icons/menu-closed.svg");
   }
 
-  &--opened {
+  &--open {
     background-image: url("../img/icons/menu-burger.svg");
   }
 }

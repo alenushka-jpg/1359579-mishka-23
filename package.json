@@ -2,8 +2,9 @@
   "private": true,
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
+    "@types/gsap": "^3.0.0",
     "autoprefixer": "10.3.1",
-    "browser-sync": "2.27.5",
+    "browser-sync": "^2.29.3",
     "del": "6.0.0",
     "gulp": "4.0.2",
     "gulp-htmlmin": "5.0.1",
@@ -11,10 +12,10 @@
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.0",
     "gulp-rename": "2.0.0",
-    "gulp-sass": "4.1.0",
+    "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "3.0.0",
     "gulp-svgstore": "8.0.0",
-    "gulp-terser": "2.0.1",
+    "gulp-terser": "^2.1.0",
     "gulp-webp": "4.0.1",
     "postcss": "8.3.6",
     "postcss-csso": "5.0.1",
@@ -43,5 +44,9 @@
   ],
   "engines": {
     "node": "14.15.0"
+  },
+  "dependencies": {
+    "gsap": "^3.11.5",
+    "node-sass": "^5.0.0"
   }
 }

@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('node-sass')); // Устанавливаем компилятор Sass
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
@@ -44,11 +44,11 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/*.js")
+  return gulp.src("source/js/**/*.js")
     .pipe(terser())
-    .pipe(rename(function (path) {
-      path.basename += ".min";
-    }))
+  // .pipe(rename(function (path) {
+  //  path.basename += ".min";
+  //  }))
     .pipe(gulp.dest("build/js"));
 }
 
